@@ -50,6 +50,10 @@
     </scm>
 
     <properties>
+
+        <sonar.organization>alu0101221960</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
         <jackson.version>2.10.0</jackson.version>
         <gpg.plugin.version>1.5</gpg.plugin.version>
         <javadoc.plugin.version>3.2.0</javadoc.plugin.version>
