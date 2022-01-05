@@ -53,9 +53,11 @@ public final class CreateData {
             // Default values
             int numberOfThreads = numberOfFiles;
             // Optional additional arguments overriding default values
-            int csvFileExecution = Integer.parseInt(args[isCSVout]);
+            int csvFileExecution = 1;
             if (args.length > MINIMUM_ARGS) {
                 numberOfThreads = Integer.parseInt(args[NUM_THREADS_ARG]);
+                //1 para ejecucion sin csv y 0 para ejecucion modo csv
+                csvFileExecution = Integer.parseInt(args[isCSVout]);
             }
             long startTime = System.currentTimeMillis();
             ExecutorService executors = Executors.newFixedThreadPool(numberOfThreads, createDaemonThreadFactory());
