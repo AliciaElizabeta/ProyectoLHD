@@ -16,17 +16,14 @@ limitations under the License.
  
 # Synthetic Data Generator
 
-Ever found yourself scrambling around to find test data and then when you find some it isn't in the quantity that you need? 
-Or you can't generate the data multi threaded and so it takes too long to produce. 
-
-Look no further, we have a data generator that fakes up some classic human resources data about employees. 
+We have a data generator that generated synthetic data from a classic human resources and a professor data. 
 We have also created the data structure to contain the types of complex data structures that can make 
 computation expensive or difficult to truly test your platform.
 
 This repo provides the code to generate as many Employee records as you want, split over as many Avro files as you desire. 
 You can also optionally define the number of parallel threads used to generate your data.
 
-An `Employee` objects contains the following fields:
+An `Employee` and a `Teacher` objects contains the following fields:
 ```
 class Employee {
     UserId uid;
@@ -50,12 +47,12 @@ class Employee {
 ```
 The manager field is an array of manager, which could potentially be nested several layers deep, in the generated example manager is nested 3-5 layers deep.
 
-To use the generator you will need to have installed (git, maven and JDK 11). 
-
+## Get Started
+To use the generator you will need to have installed (git, maven and JDK 11).  
 To get started first clone this repo locally.
 
 ```bash
-git clone https://github.com/gchq/synthetic-data-generator.git
+git clone https://github.com/alu0101221960/ProyectoLHD
 ```
 
 Then cd into the synthetic-data-generator directory and build the codebase
