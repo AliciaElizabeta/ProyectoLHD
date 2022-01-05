@@ -20,10 +20,11 @@ We have a data generator that generated synthetic data from a classic human reso
 We have also created the data structure to contain the types of complex data structures that can make 
 computation expensive or difficult to truly test your platform.
 
-This repo provides the code to generate as many Employee records as you want, split over as many Avro files as you desire. 
-You can also optionally define the number of parallel threads used to generate your data.
+This repo provides the code to generate as many Employee records as you want, split over as many Avro files as you desire. You can also optionally define the number of parallel threads used to generate your data.
 
-An `Employee` and a `Teacher` objects contains the following fields:
+An `Employee` and a `Professor` objects were created.
+
+The `Employee`contains the following fields:
 ```
 class Employee {
     UserId uid;
@@ -38,6 +39,26 @@ class Employee {
     Manager[] manager;
     String hireDate;
     Grade grade;
+    Department department;
+    int salaryAmount;
+    int salaryBonus;
+    WorkLocation workLocation;
+    Sex sex;
+}
+```
+
+The `Professor` object contains the following fields:
+```
+class Professor {
+    UserId uid;
+    String name;
+    String dateOfBirth;
+    PhoneNumber[] contactNumbers;
+    EmergencyContact[] emergencyContacts;
+    Address address;
+    Nationality nationality;
+    Manager[] manager;
+    String hireDate;
     Department department;
     int salaryAmount;
     int salaryBonus;
@@ -77,3 +98,6 @@ For example to generate 1,000,000 employee records, spread over 15 files, runnin
 ```bash
 .createHRData.sh data/employee 1000000 15 4
 ```
+
+## Print generated data
+It is possible to print the generated data in a *csv* format
