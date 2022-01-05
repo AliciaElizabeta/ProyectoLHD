@@ -25,7 +25,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.StringJoiner;
 
-public class Professor implements Serializable {
+public class Teacher implements Serializable {
     private static final long serialVersionUID = 1L;
     private static final int MIN_MANGERS_TREE_HEIGHT = 2;
     private static final int EXTRA_MANAGERS_TREE_HEIGHT_RANGE = 3;
@@ -50,26 +50,26 @@ public class Professor implements Serializable {
     private Sex sex;
 
 
-    public static Professor generate(final Random random) {
-        Professor professor = new Professor();
+    public static Teacher generate(final Random random) {
+        Teacher teacher = new Teacher();
         Faker faker = ThreadLocalFaker.getFaker(random);
-        professor.setUid(generateUID(random));
-        Name professorName = faker.name();
-        professor.setName(professorName.firstName() + " " + professorName.lastName()); // we are storing name as a string not a Name
-        professor.setDateOfBirth(DateHelper.generateDateOfBirth(random));
-        professor.setContactNumbers(PhoneNumber.generateMany(random));
-        professor.setEmergencyContacts(EmergencyContact.generateMany(faker, random));
-        professor.setAddress(Address.generate(faker, random));
-        professor.setNationality(Nationality.generate(random));
-        professor.setManager(Manager.generateMany(random, MIN_MANGERS_TREE_HEIGHT + random.nextInt(EXTRA_MANAGERS_TREE_HEIGHT_RANGE)));
-        professor.setHireDate(DateHelper.generateHireDate(professor.dateOfBirth, random));
-        professor.setDepartment(Department.generate(random));
-        professor.setSalaryAmount(MIN_SALARY + random.nextInt(EXTRA_SALARY_RANGE));
-        professor.setSalaryBonus(random.nextInt(SALARY_BONUS_RANGE));
-        professor.setWorkLocation(WorkLocation.generate(faker, random));
-        professor.setSex(Sex.generate(random));
+        teacher.setUid(generateUID(random));
+        Name teacherName = faker.name();
+        teacher.setName(teacherName.firstName() + " " + teacherName.lastName()); // we are storing name as a string not a Name
+        teacher.setDateOfBirth(DateHelper.generateDateOfBirth(random));
+        teacher.setContactNumbers(PhoneNumber.generateMany(random));
+        teacher.setEmergencyContacts(EmergencyContact.generateMany(faker, random));
+        teacher.setAddress(Address.generate(faker, random));
+        teacher.setNationality(Nationality.generate(random));
+        teacher.setManager(Manager.generateMany(random, MIN_MANGERS_TREE_HEIGHT + random.nextInt(EXTRA_MANAGERS_TREE_HEIGHT_RANGE)));
+        teacher.setHireDate(DateHelper.generateHireDate(teacher.dateOfBirth, random));
+        teacher.setDepartment(Department.generate(random));
+        teacher.setSalaryAmount(MIN_SALARY + random.nextInt(EXTRA_SALARY_RANGE));
+        teacher.setSalaryBonus(random.nextInt(SALARY_BONUS_RANGE));
+        teacher.setWorkLocation(WorkLocation.generate(faker, random));
+        teacher.setSex(Sex.generate(random));
 
-        return professor;
+        return teacher;
     }
 
     public static String generateUID(final Random random) {
@@ -194,7 +194,7 @@ public class Professor implements Serializable {
 
     @Override
     public String toString() {
-        return new StringJoiner(", ", Professor.class.getSimpleName() + "[", "]")
+        return new StringJoiner(", ", Teacher.class.getSimpleName() + "[", "]")
                 .add("uid=" + uid)
                 .add("name='" + name + "'")
                 .add("dateOfBirth='" + dateOfBirth + "'")
