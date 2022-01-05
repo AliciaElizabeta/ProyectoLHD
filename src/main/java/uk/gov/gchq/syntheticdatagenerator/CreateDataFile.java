@@ -22,6 +22,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import uk.gov.gchq.syntheticdatagenerator.serialise.AvroSerialiser;
 import uk.gov.gchq.syntheticdatagenerator.types.Employee;
+import uk.gov.gchq.syntheticdatagenerator.types.Teacher;
 import uk.gov.gchq.syntheticdatagenerator.types.Manager;
 import uk.gov.gchq.syntheticdatagenerator.types.UserId;
 
@@ -44,12 +45,14 @@ public final class CreateDataFile implements Callable<Boolean> {
     private final long numberOfEmployees;
     private final Random random;
     private final File outputFile;
+    private final String ocupation;
     private boolean isCSVFile = false;
 
-    public CreateDataFile(final long numberOfEmployees, final long seed, final File outputFile) {
+    public CreateDataFile(final long numberOfEmployees, final int seed, final File outputFile, final String ocupation) {
         this.numberOfEmployees = numberOfEmployees;
         this.random = new Random(seed);
         this.outputFile = outputFile;
+        this.ocupation = ocupation;
         if(getExtensionByGuava(outputFile) == "csv"){isCSVFile = true;}
     }
 
@@ -61,6 +64,15 @@ public final class CreateDataFile implements Callable<Boolean> {
             }
         }
         try (OutputStream out = new FileOutputStream(outputFile)) {
+            if(ocupation == "E"){
+
+            }
+            else if(ocupation == "T"){
+
+            }
+            else{
+                
+            }
             AvroSerialiser<Employee> employeeAvroSerialiser = new AvroSerialiser<>(Employee.class);
 
             // Need at least one Employee

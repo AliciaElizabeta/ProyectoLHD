@@ -38,6 +38,7 @@ public final class CreateData {
     private static final int NUM_FILES_ARG = 2;
     private static final int NUM_THREADS_ARG = 3;
     private static final int isCSVout = 1;
+    private static final String ocupation = "E";
 
     private CreateData() {
     }
@@ -54,6 +55,7 @@ public final class CreateData {
             int numberOfThreads = numberOfFiles;
             // Optional additional arguments overriding default values
             int csvFileExecution = 1;
+            String job = ocupation;
             if (args.length > MINIMUM_ARGS) {
                 numberOfThreads = Integer.parseInt(args[NUM_THREADS_ARG]);
                 //1 para ejecucion sin csv y 0 para ejecucion modo csv
@@ -65,10 +67,10 @@ public final class CreateData {
             long employeesPerFile = numberOfEmployees / numberOfFiles;
             for (int i = 0; i < numberOfFiles; i++) {
                 if(csvFileExecution == 1){
-                    tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/employee_file" + i + ".avro"));
+                    tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/employee_file" + i + ".avro" ), job);
                 }
                 else if(csvFileExecution != 1){
-                    tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/employee_file" + i + ".csv"));
+                    tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/employee_file" + i + ".csv"), job);
                 }
             }
             try {
