@@ -16,6 +16,8 @@
 
 package uk.gov.gchq.syntheticdatagenerator;
 
+import org.apache.commons.io.FilenameUtils;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import uk.gov.gchq.syntheticdatagenerator.serialise.AvroSerialiser;
@@ -32,6 +34,8 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Stream;
 
+import com.google.common.io.Files;
+
 public final class CreateDataFile implements Callable<Boolean> {
     private static final Logger LOGGER = LoggerFactory.getLogger(CreateDataFile.class);
     // When a large number of employees are requested, print the progress as feedback that the process has not frozen
@@ -40,11 +44,13 @@ public final class CreateDataFile implements Callable<Boolean> {
     private final long numberOfEmployees;
     private final Random random;
     private final File outputFile;
+    private boolean isCSVFile = false;
 
     public CreateDataFile(final long numberOfEmployees, final long seed, final File outputFile) {
         this.numberOfEmployees = numberOfEmployees;
         this.random = new Random(seed);
         this.outputFile = outputFile;
+        if(getExtensionByGuava(outputFile) == "csv"){isCSVFile = true;}
     }
 
     public Boolean call() {
@@ -66,7 +72,14 @@ public final class CreateDataFile implements Callable<Boolean> {
             // Create more employees if needed
             Stream<Employee> employeeStream = Stream.of(firstEmployee);
             if (numberOfEmployees > 1) {
-                employeeStream = Stream.concat(employeeStream, generateStreamOfEmployees());
+                if(isCSVFile == false){
+                    employeeStream = Stream.concat(employeeStream, generateStreamOfEmployees());
+                }
+                else{
+                    Stream aux = Stream.of(";");
+                    employeeStream = Stream.concat(employeeStream, aux);
+                    employeeStream = Stream.concat(employeeStream, generateStreamOfEmployees());
+                }
             }
 
             // Serialise stream to output
@@ -89,5 +102,10 @@ public final class CreateDataFile implements Callable<Boolean> {
         });
         // Excluding the one employee we had to generate above
         return employeeStream.limit(numberOfEmployees - 1);
+    }
+
+    public String getExtensionByGuava(File filename) {
+        String f = filename.getName();
+        return Files.getFileExtension(f);
     }
 }

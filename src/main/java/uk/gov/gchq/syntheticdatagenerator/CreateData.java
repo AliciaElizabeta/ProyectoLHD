@@ -16,6 +16,8 @@
 
 package uk.gov.gchq.syntheticdatagenerator;
 
+import org.apache.commons.io.FilenameUtils;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -35,6 +37,7 @@ public final class CreateData {
     private static final int NUM_EMPLOYEES_ARG = 1;
     private static final int NUM_FILES_ARG = 2;
     private static final int NUM_THREADS_ARG = 3;
+    private static boolean isCSVout = false;
 
     private CreateData() {
     }
@@ -58,7 +61,12 @@ public final class CreateData {
             CreateDataFile[] tasks = new CreateDataFile[numberOfFiles];
             long employeesPerFile = numberOfEmployees / numberOfFiles;
             for (int i = 0; i < numberOfFiles; i++) {
-                tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/employee_file" + i + ".avro"));
+                if(isCSVout == false){
+                    tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/employee_file" + i + ".avro"));
+                }
+                else{
+                    tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/employee_file" + i + ".csv"));
+                }
             }
             try {
                 List<Future<Boolean>> responses = executors.invokeAll(Arrays.asList(tasks));
