@@ -40,12 +40,9 @@ public class Professor implements Serializable {
     private PhoneNumber[] contactNumbers;
     private EmergencyContact[] emergencyContacts;
     private Address address;
-    private BankDetails bankDetails;
-    private String taxCode;
     private Nationality nationality;
     private Manager[] manager;
     private String hireDate;
-    private Grade grade;
     private Department department;
     private int salaryAmount;
     private int salaryBonus;
@@ -63,12 +60,9 @@ public class Professor implements Serializable {
         professor.setContactNumbers(PhoneNumber.generateMany(random));
         professor.setEmergencyContacts(EmergencyContact.generateMany(faker, random));
         professor.setAddress(Address.generate(faker, random));
-        professor.setBankDetails(BankDetails.generate(random));
-        professor.setTaxCode(generateTaxCode());
         professor.setNationality(Nationality.generate(random));
         professor.setManager(Manager.generateMany(random, MIN_MANGERS_TREE_HEIGHT + random.nextInt(EXTRA_MANAGERS_TREE_HEIGHT_RANGE)));
         professor.setHireDate(DateHelper.generateHireDate(professor.dateOfBirth, random));
-        professor.setGrade(Grade.generate(random));
         professor.setDepartment(Department.generate(random));
         professor.setSalaryAmount(MIN_SALARY + random.nextInt(EXTRA_SALARY_RANGE));
         professor.setSalaryBonus(random.nextInt(SALARY_BONUS_RANGE));
@@ -134,22 +128,6 @@ public class Professor implements Serializable {
         this.address = address;
     }
 
-    public BankDetails getBankDetails() {
-        return bankDetails;
-    }
-
-    public void setBankDetails(final BankDetails bankDetails) {
-        this.bankDetails = bankDetails;
-    }
-
-    public String getTaxCode() {
-        return taxCode;
-    }
-
-    public void setTaxCode(final String taxCode) {
-        this.taxCode = taxCode;
-    }
-
     public Nationality getNationality() {
         return nationality;
     }
@@ -172,14 +150,6 @@ public class Professor implements Serializable {
 
     public void setHireDate(final String hireDate) {
         this.hireDate = hireDate;
-    }
-
-    public Grade getGrade() {
-        return grade;
-    }
-
-    public void setGrade(final Grade grade) {
-        this.grade = grade;
     }
 
     public Department getDepartment() {
@@ -231,12 +201,9 @@ public class Professor implements Serializable {
                 .add("contactNumbers=" + Arrays.toString(contactNumbers))
                 .add("emergencyContacts=" + Arrays.toString(emergencyContacts))
                 .add("address=" + address)
-                .add("bankDetails=" + bankDetails)
-                .add("taxCode='" + taxCode + "'")
                 .add("nationality=" + nationality)
                 .add("manager=" + Arrays.toString(manager))
                 .add("hireDate='" + hireDate + "'")
-                .add("grade=" + grade)
                 .add("department=" + department)
                 .add("salaryAmount=" + salaryAmount)
                 .add("salaryBonus=" + salaryBonus)
