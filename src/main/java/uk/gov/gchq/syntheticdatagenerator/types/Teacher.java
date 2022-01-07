@@ -32,7 +32,6 @@ public class Teacher implements Serializable {
     private static final int MIN_SALARY = 20_000;
     private static final int EXTRA_SALARY_RANGE = 100_000;
     private static final int SALARY_BONUS_RANGE = 10_000;
-    private static final String TAX_CODE = "11500L";
 
     private String uid;
     private String name;
@@ -41,9 +40,9 @@ public class Teacher implements Serializable {
     private EmergencyContact[] emergencyContacts;
     private Address address;
     private Nationality nationality;
+    private Subject subject;
     private Manager[] manager;
     private String hireDate;
-    private Department department;
     private int salaryAmount;
     private int salaryBonus;
     private WorkLocation workLocation;
@@ -61,9 +60,9 @@ public class Teacher implements Serializable {
         teacher.setEmergencyContacts(EmergencyContact.generateMany(faker, random));
         teacher.setAddress(Address.generate(faker, random));
         teacher.setNationality(Nationality.generate(random));
+        teacher.setSubject(Subject.generate(random));
         teacher.setManager(Manager.generateMany(random, MIN_MANGERS_TREE_HEIGHT + random.nextInt(EXTRA_MANAGERS_TREE_HEIGHT_RANGE)));
         teacher.setHireDate(DateHelper.generateHireDate(teacher.dateOfBirth, random));
-        teacher.setDepartment(Department.generate(random));
         teacher.setSalaryAmount(MIN_SALARY + random.nextInt(EXTRA_SALARY_RANGE));
         teacher.setSalaryBonus(random.nextInt(SALARY_BONUS_RANGE));
         teacher.setWorkLocation(WorkLocation.generate(faker, random));
@@ -74,10 +73,6 @@ public class Teacher implements Serializable {
 
     public static String generateUID(final Random random) {
         return String.valueOf(random.nextInt(Integer.MAX_VALUE));
-    }
-
-    private static String generateTaxCode() {
-        return TAX_CODE;
     }
 
     public String getUid() {
@@ -140,6 +135,11 @@ public class Teacher implements Serializable {
         return manager;
     }
 
+
+    public Subject getSubject() { return subject; }
+
+    public void setSubject(final Subject subject) { this.subject = subject; }
+
     public void setManager(final Manager[] manager) {
         this.manager = manager;
     }
@@ -150,14 +150,6 @@ public class Teacher implements Serializable {
 
     public void setHireDate(final String hireDate) {
         this.hireDate = hireDate;
-    }
-
-    public Department getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(final Department department) {
-        this.department = department;
     }
 
     public int getSalaryAmount() {
@@ -202,9 +194,9 @@ public class Teacher implements Serializable {
                 .add("emergencyContacts=" + Arrays.toString(emergencyContacts))
                 .add("address=" + address)
                 .add("nationality=" + nationality)
+                .add("subject=" + subject)
                 .add("manager=" + Arrays.toString(manager))
                 .add("hireDate='" + hireDate + "'")
-                .add("department=" + department)
                 .add("salaryAmount=" + salaryAmount)
                 .add("salaryBonus=" + salaryBonus)
                 .add("workLocation=" + workLocation)
