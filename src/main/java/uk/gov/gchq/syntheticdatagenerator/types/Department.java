@@ -19,15 +19,20 @@ package uk.gov.gchq.syntheticdatagenerator.types;
 import java.util.Random;
 
 public enum Department {
-    CLINICAL_TRIALS,
-    IT,
-    CHIEF_DATA_OFFICE,
-    ACCOUNTS,
-    FINANCE,
-    AMSTERDAM_LAB,
-    LONDON_LAB,
-    NEW_YORK_LAB,
-    FOUNDERS;
+    EDUCATION,
+    HEALTH_SCIENCES,
+    HUMANITIES,
+    BUSINESS,
+    TOURISM,
+    ECONOMICS,
+    LAW,
+    POLITICAL_SCIENCES,
+    SOCIAL_SCIENCES,
+    COMMUNICATION,
+    SCIENCES,
+    HIGHER_POLYTECHNIC_SCHOOL_OF_ENGINEERING,
+    HIGHER_POLYTECHNIC_SCHOOL_OF_ENGINEERING_AND_TECHNOLOGY,
+    SCHOOL_DOCTORAL_AND_GRADUATES_STUDIES;
 
     public static Department generate(final Random random) {
         return Department.values()[random.nextInt(Department.values().length)];

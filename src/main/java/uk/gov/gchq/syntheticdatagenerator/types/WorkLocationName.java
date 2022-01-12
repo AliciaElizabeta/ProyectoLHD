@@ -19,10 +19,45 @@ package uk.gov.gchq.syntheticdatagenerator.types;
 import java.util.Random;
 
 public enum WorkLocationName {
-    AMSTERDAM,
-    LONDON,
-    NEW_YORK,
-    HAMPTON_HOSPITAL;
+    MADRID,
+    BARCELONA,
+    SEVILLA,
+    VALENCIA,
+    ALICANTE,
+    MURCIA,
+    BILBAO,
+    ZARAGOZA,
+    MALAGA,
+    CORDOBA,
+    VALLADOLID,
+    VIGO,
+    GIJON,
+    GRANADA,
+    CADIZ,
+    VITORIA,
+    JEREZ_DE_LA_FRONTERA,
+    PAMPLONA,
+    SAN_SEBASTIAN,
+    PALMA_DE_MALLORCA,
+    ALMERIA,
+    GETAFE,
+    BURGOS,
+    ALBACETE,
+    SANTANDER,
+    SALAMANCA,
+    MARBELLA,
+    HUELVA,
+    TARRAGONA,
+    TOLEDO,
+    LAS_PALMAS_DE_GRAN_CANARIA,
+    SAN_SEBASTIAN_DE_LA_GOMERA,
+    PUERTO_DEL_ROSARIO,
+    ARRECIFE,
+    ADEJE,
+    PUERTO_DE_LA_CRUZ,
+    SANTA_CRUZ_DE_TENERIFE,
+    SAN_CRISTOBAL_DE_LA_LAGUNA;
+
 
     public static WorkLocationName generate(final Random random) {
         return WorkLocationName.values()[random.nextInt(WorkLocationName.values().length)];
