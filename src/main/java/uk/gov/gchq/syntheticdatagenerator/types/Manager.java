@@ -74,7 +74,7 @@ public class Manager {
 
     public Manager[] getManager() {
         if (null == managers) {
-            return null;
+            return new Manager[0];
         } else {
             return managers.clone();
         }
