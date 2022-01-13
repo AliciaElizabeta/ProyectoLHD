@@ -16,8 +16,6 @@
 
 package uk.gov.gchq.syntheticdatagenerator;
 
-import org.apache.commons.io.FilenameUtils;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import uk.gov.gchq.syntheticdatagenerator.serialise.AvroSerialiser;
@@ -53,7 +51,7 @@ public final class CreateDataFile implements Callable<Boolean> {
         this.random = new Random(seed);
         this.outputFile = outputFile;
         this.ocupation = ocupation;
-        if(getExtensionByGuava(outputFile) == "csv"){isCSVFile = true;}
+        if(getExtensionByGuava(outputFile).equals("csv")){isCSVFile = true;}
     }
 
     public Boolean call() {
@@ -64,10 +62,10 @@ public final class CreateDataFile implements Callable<Boolean> {
             }
         }
         try (OutputStream out = new FileOutputStream(outputFile)) {
-            if(ocupation == "E"){
+            if(ocupation.equals("E")){
 
             }
-            else if(ocupation == "T"){
+            else if(ocupation.equals("T")){
 
             }
             else{

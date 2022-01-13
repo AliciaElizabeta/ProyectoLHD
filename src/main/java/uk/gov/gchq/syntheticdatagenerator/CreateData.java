@@ -16,8 +16,6 @@
 
 package uk.gov.gchq.syntheticdatagenerator;
 
-import org.apache.commons.io.FilenameUtils;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
