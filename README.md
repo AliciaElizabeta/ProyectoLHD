@@ -16,13 +16,13 @@ limitations under the License.
  
 # Synthetic Data Generator
 
-We have a data generator that generated synthetic data from a classic human resources and a professor data. 
-We have also created the data structure to contain the types of complex data structures that can make 
+This synthetic data generator fakes classic human resources data about employees and teachers.
+The data structure contains the types of complex data structures that can make 
 computation expensive or difficult to truly test your platform.
 
-This repo provides the code to generate as many Employee records as you want, split over as many Avro files as you desire. You can also optionally define the number of parallel threads used to generate your data.
+This repository provides the code to generate as many Employee records as you want, split over as many Avro files as you desire. You can also optionally define the number of parallel threads used to generate your data.
 
-An `Employee` and a `Professor` objects were created.
+An `Employee` and a `Teacher` objects were created.
 
 The `Employee`contains the following fields:
 ```
@@ -47,9 +47,9 @@ class Employee {
 }
 ```
 
-The `Professor` object contains the following fields:
+The `Teacher` object contains the following fields:
 ```
-class Professor {
+class Teacher {
     UserId uid;
     String name;
     String dateOfBirth;
@@ -57,9 +57,10 @@ class Professor {
     EmergencyContact[] emergencyContacts;
     Address address;
     Nationality nationality;
+    Subject subject;
+    Department department;
     Manager[] manager;
     String hireDate;
-    Department department;
     int salaryAmount;
     int salaryBonus;
     WorkLocation workLocation;

@@ -41,6 +41,7 @@ public class Teacher implements Serializable {
     private Address address;
     private Nationality nationality;
     private Subject subject;
+    private Department department;
     private Manager[] manager;
     private String hireDate;
     private int salaryAmount;
@@ -61,6 +62,7 @@ public class Teacher implements Serializable {
         teacher.setAddress(Address.generate(faker, random));
         teacher.setNationality(Nationality.generate(random));
         teacher.setSubject(Subject.generate(random));
+        teacher.setDepartment(Department.generate(random));
         teacher.setManager(Manager.generateMany(random, MIN_MANGERS_TREE_HEIGHT + random.nextInt(EXTRA_MANAGERS_TREE_HEIGHT_RANGE)));
         teacher.setHireDate(DateHelper.generateHireDate(teacher.dateOfBirth, random));
         teacher.setSalaryAmount(MIN_SALARY + random.nextInt(EXTRA_SALARY_RANGE));
@@ -140,6 +142,10 @@ public class Teacher implements Serializable {
 
     public void setSubject(final Subject subject) { this.subject = subject; }
 
+    public Department getDepartment() { return department;}
+
+    public void setDepartment(final Department department) {this.department = department;}
+
     public void setManager(final Manager[] manager) {
         this.manager = manager;
     }
@@ -195,6 +201,7 @@ public class Teacher implements Serializable {
                 .add("address=" + address)
                 .add("nationality=" + nationality)
                 .add("subject=" + subject)
+                .add("department=" + department)
                 .add("manager=" + Arrays.toString(manager))
                 .add("hireDate='" + hireDate + "'")
                 .add("salaryAmount=" + salaryAmount)
