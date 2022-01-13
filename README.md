@@ -102,3 +102,6 @@ For example to generate 1,000,000 employee records, spread over 15 files, runnin
 
 ## Print generated data
 It is possible to print the generated data in a *csv* format
+
+
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=alu0101221960_ProyectoLHD)
