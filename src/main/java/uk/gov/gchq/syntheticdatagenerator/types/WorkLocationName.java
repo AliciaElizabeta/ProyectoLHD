@@ -18,6 +18,10 @@ package uk.gov.gchq.syntheticdatagenerator.types;
 
 import java.util.Random;
 
+/**
+ * @enum Work Location Name
+ * @brief This enum class lists possible work locations
+ */
 public enum WorkLocationName {
     MADRID,
     BARCELONA,

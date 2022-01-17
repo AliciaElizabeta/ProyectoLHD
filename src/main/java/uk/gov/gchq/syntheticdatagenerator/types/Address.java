@@ -34,6 +34,12 @@ public class Address implements Serializable {
     private String state;
     private String zipCode;
 
+    /**
+     * @brief This method generates addresses
+     * @param faker fake data values
+     * @param random random value
+     * @return generated addresses
+     */
     public static Address generate(final Faker faker, final Random random) {
         Address address = new Address();
         com.github.javafaker.Address fakeAddress = faker.address();

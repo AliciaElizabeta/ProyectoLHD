@@ -53,7 +53,7 @@ public class Manager implements Serializable {
      * @param random random value
      * @param chain level depth of managers
      * @param managerType type of manager
-     * @return manager
+     * @return generated managers
      */
     public static Manager generateRecursive(final Random random, final int chain, final String managerType) {
         Manager manager = Manager.generate(random, managerType);
@@ -69,7 +69,7 @@ public class Manager implements Serializable {
      * @brief This method generates a new manager
      * @param random random value
      * @param managerType type of manager
-     * @return manager
+     * @return generated manager
      */
     public static Manager generate(final Random random, final String managerType) {
         Manager manager = new Manager();

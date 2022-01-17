@@ -2,6 +2,11 @@ package uk.gov.gchq.syntheticdatagenerator.types;
 
 import java.util.Random;
 
+/**
+ * @enum Subject
+ * @brief This enum class lists a number of courses available at ULL
+ */
+
 public enum Subject {
     LABORATORIO_DE_DESARROLLO_Y_HERRAMIENTAS,
     INGENIERIA_LOGISTICA,

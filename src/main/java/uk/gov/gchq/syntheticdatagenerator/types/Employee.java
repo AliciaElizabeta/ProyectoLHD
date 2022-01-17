@@ -56,7 +56,12 @@ public class Employee implements Serializable {
     private WorkLocation workLocation;
     private Sex sex;
 
-
+    /**
+     * @class Employee
+     * @brief This class generates random values for an employee
+     * @param random random value
+     * @return generated employees
+     */
     public static Employee generate(final Random random) {
         Employee employee = new Employee();
         Faker faker = ThreadLocalFaker.getFaker(random);

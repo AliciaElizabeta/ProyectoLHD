@@ -18,6 +18,10 @@ package uk.gov.gchq.syntheticdatagenerator.types;
 
 import java.util.Random;
 
+/**
+ * @enum Relation
+ * @brief This enum class lists possible relations
+ */
 public enum Relation {
     GRANDPARENT,
     PARENT,

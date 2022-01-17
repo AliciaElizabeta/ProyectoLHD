@@ -20,7 +20,11 @@ import java.util.Random;
 import java.util.StringJoiner;
 import java.io.Serializable;
 
-
+/**
+ * @class Phone Number
+ * @brief This class generates a maximum of 3 random phone numbers values
+ * @details Each phone number has a length of 10 digits
+ */
 public class PhoneNumber implements Serializable {
     private static final int MAX_EXTRA_CONTACTS = 3;
     private static final int PHONE_NUMBER_LENGTH = 10; // excluding leading zero
@@ -30,6 +34,11 @@ public class PhoneNumber implements Serializable {
     private static final String[] DEFAULT_TYPES = new String[]{"Mobile"};
     private static final String[] POSSIBLE_TYPES = new String[]{"Home", "Work", "Work Mobile"};
 
+    /**
+     * @brief This method generates a list of valid phone numbers
+     * @param random random value
+     * @return generated phone number
+     */
     public static PhoneNumber[] generateMany(final Random random) {
         int numberOfExtraContacts = random.nextInt(MAX_EXTRA_CONTACTS);
         PhoneNumber[] phoneNumbers = new PhoneNumber[numberOfExtraContacts + 1];
@@ -40,10 +49,21 @@ public class PhoneNumber implements Serializable {
         return phoneNumbers;
     }
 
+    /**
+     * @brief This method generates a phone number
+     * @param random random value
+     * @return phone number
+     */
     public static PhoneNumber generate(final Random random) {
         return PhoneNumber.generate(random, POSSIBLE_TYPES);
     }
 
+    /**
+     * @brief This method generates a phone number with a list of possible types
+     * @param random random value
+     * @param possibleTypes different types of phone numbers
+     * @return phone number
+     */
     private static PhoneNumber generate(final Random random, final String[] possibleTypes) {
         PhoneNumber phoneNumber = new PhoneNumber();
         phoneNumber.type = possibleTypes[random.nextInt(possibleTypes.length)];

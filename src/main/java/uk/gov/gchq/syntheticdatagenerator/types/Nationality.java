@@ -18,6 +18,10 @@ package uk.gov.gchq.syntheticdatagenerator.types;
 
 import java.util.Random;
 
+/**
+ * @enum Nationality
+ * @brief This enum class lists different nationalities
+ */
 public enum Nationality {
     AFGHAN,
     ALBANIAN,

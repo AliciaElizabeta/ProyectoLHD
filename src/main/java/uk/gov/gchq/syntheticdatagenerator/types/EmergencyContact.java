@@ -34,6 +34,12 @@ public class EmergencyContact implements Serializable{
     private Relation relation;
     private PhoneNumber[] contactNumbers;
 
+    /**
+     * @brief This method generates emergency contacts
+     * @param faker fake data values
+     * @param random random value
+     * @return generated emergency contact
+     */
     public static EmergencyContact generate(final Faker faker, final Random random) {
         EmergencyContact contact = new EmergencyContact();
         Name tempName = faker.name();
@@ -43,6 +49,12 @@ public class EmergencyContact implements Serializable{
         return contact;
     }
 
+    /**
+     * @brief This method generates a list of emergency contacts
+     * @param faker fake data values
+     * @param random random value
+     * @return generated list of emergency contacts
+     */
     public static EmergencyContact[] generateMany(final Faker faker, final Random random) {
         int numberOfExtraContacts = random.nextInt(MAX_EXTRA_CONTACTS);
         EmergencyContact[] emergencyContacts = new EmergencyContact[numberOfExtraContacts + 1];

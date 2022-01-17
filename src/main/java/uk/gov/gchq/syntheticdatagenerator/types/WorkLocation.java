@@ -22,11 +22,20 @@ import java.util.Random;
 import java.util.StringJoiner;
 import java.io.Serializable;
 
-
+/**
+ * @class Work Location
+ * @brief This class creates random values for a work location
+ */
 public class WorkLocation implements Serializable{
     private WorkLocationName workLocationName;
     private Address address;
 
+    /**
+     * @brief This method generates work locations
+     * @param faker fake data value
+     * @param random random value
+     * @return generated work location
+     */
     public static WorkLocation generate(final Faker faker, final Random random) {
         WorkLocation workLocation = new WorkLocation();
         workLocation.setAddress(Address.generate(faker, random));

@@ -24,6 +24,7 @@ import java.io.Serializable;
 /**
  * @class Bank Details
  * @brief This class creates random values for a bank account
+ * @details The Sort Code is defined by a number of 6 digits while the Account Number is defined by 8 digits
  */
 public class BankDetails implements Serializable{
     private static final int SORT_CODE_DIGITS = 6;
@@ -31,6 +32,11 @@ public class BankDetails implements Serializable{
     private String sortCode;
     private String accountNumber;
 
+    /**
+     * @brief This method generates bank details
+     * @param random random value
+     * @return generated bank details
+     */
     public static BankDetails generate(final Random random) {
         BankDetails bankDetails = new BankDetails();
         bankDetails.sortCode = String.format("%0" + SORT_CODE_DIGITS + "d", random.nextInt((int) Math.pow(10, SORT_CODE_DIGITS)));

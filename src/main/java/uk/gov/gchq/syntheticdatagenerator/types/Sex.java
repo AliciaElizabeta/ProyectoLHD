@@ -21,6 +21,11 @@ import java.util.Random;
 /**
  * Taken from https://www.datadictionary.nhs.uk/data_dictionary/attributes/p/person/person_gender_code_de.asp
  */
+
+/**
+ * @enum Sex
+ * @brief This enum class lists possible sexes
+ */
 public enum Sex {
     NOT_KNOWN,
     MALE,
