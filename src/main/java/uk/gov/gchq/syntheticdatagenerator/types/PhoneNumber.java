@@ -104,6 +104,10 @@ public class PhoneNumber implements Serializable {
         this.number = phoneNumber;
     }
 
+    /**
+     * @brief Change attributes to a string format
+     * @return attributes in a string format
+     */
     @Override
     public String toString() {
         return new StringJoiner(", ", PhoneNumber.class.getSimpleName() + "[", "]")

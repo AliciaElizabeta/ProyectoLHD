@@ -137,6 +137,10 @@ public class Manager implements Serializable {
         }
     }
 
+    /**
+     * @brief Change attributes to a string format
+     * @return attributes in a string format
+     */
     @Override
     public String toString() {
         return new StringJoiner(", ", Manager.class.getSimpleName() + "[", "]")

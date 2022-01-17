@@ -135,6 +135,10 @@ public class Address implements Serializable {
         this.zipCode = zipCode;
     }
 
+    /**
+     * @brief Change attributes to a string format
+     * @return attributes in string format
+     */
     @Override
     public String toString() {
         return new StringJoiner(", ", Address.class.getSimpleName() + "[", "]")

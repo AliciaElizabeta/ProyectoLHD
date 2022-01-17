@@ -76,6 +76,10 @@ public class BankDetails implements Serializable{
         this.accountNumber = accountNumber;
     }
 
+    /**
+     * @brief Change attributes to a string format
+     * @return attributes in a string format
+     */
     @Override
     public String toString() {
         return new StringJoiner(", ", BankDetails.class.getSimpleName() + "[", "]")

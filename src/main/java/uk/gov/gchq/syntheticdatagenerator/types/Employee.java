@@ -376,6 +376,10 @@ public class Employee implements Serializable {
         this.sex = sex;
     }
 
+    /**
+     * @brief Change attributes to a string format
+     * @return attributes in string format
+     */
     @Override
     public String toString() {
         return new StringJoiner(", ", Employee.class.getSimpleName() + "[", "]")

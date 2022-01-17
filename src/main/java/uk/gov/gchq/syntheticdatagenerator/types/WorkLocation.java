@@ -75,6 +75,10 @@ public class WorkLocation implements Serializable{
         this.address = address;
     }
 
+    /**
+     * @brief Change attributes to a string format
+     * @return attributes in a string format
+     */
     @Override
     public String toString() {
         return new StringJoiner(", ", WorkLocation.class.getSimpleName() + "[", "]")
