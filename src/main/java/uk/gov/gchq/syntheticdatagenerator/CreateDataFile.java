@@ -28,7 +28,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.Random;
+import java.security.SecureRandom;
+import java.nio.ByteBuffer;
 import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Stream;
@@ -41,14 +42,14 @@ public final class CreateDataFile implements Callable<Boolean> {
     private static final long PRINT_EVERY = 100_000L;
 
     private final long numberOfEmployees;
-    private final Random random;
+    private final SecureRandom random;
     private final File outputFile;
     private final String ocupation;
     private boolean isCSVFile = false;
 
     public CreateDataFile(final long numberOfEmployees, final int seed, final File outputFile, final String ocupation) {
         this.numberOfEmployees = numberOfEmployees;
-        this.random = new Random(seed);
+        this.random = new SecureRandom(longToBytes(seed));
         this.outputFile = outputFile;
         this.ocupation = ocupation;
         if(getExtensionByGuava(outputFile).equals("csv")){isCSVFile = true;}
@@ -112,6 +113,12 @@ public final class CreateDataFile implements Callable<Boolean> {
         });
         // Excluding the one employee we had to generate above
         return employeeStream.limit(numberOfEmployees - 1);
+    }
+
+    private byte[] longToBytes(long x) {
+        ByteBuffer buffer = ByteBuffer.allocate(Long.BYTES);
+        buffer.putLong(x);
+        return buffer.array();
     }
 
     public String getExtensionByGuava(File filename) {
