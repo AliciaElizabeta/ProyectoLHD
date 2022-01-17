@@ -27,7 +27,7 @@ import java.util.StringJoiner;
 
 /**
  * @class Teacher
- * @brief This class generates random values for the entity Teacher
+ * @brief This class generates random values for the entity teacher
  */
 public class Teacher implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -91,7 +91,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method returns the identifier
+     * @brief This method returns the identifier of a teacher
      * @return identifier
      */
     public String getUid() {
@@ -99,7 +99,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method assigns the identifier
+     * @brief This method assigns the identifier of a teacher
      * @param uid identifier
      */
     public void setUid(final String uid) {
@@ -107,7 +107,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method returns the name of an employee
+     * @brief This method returns the name of a teacher
      * @return name
      */
     public String getName() {
@@ -115,7 +115,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method assigns a name to an employee
+     * @brief This method assigns a name to a teacher
      * @param name name
      */
     public void setName(final String name) {
@@ -123,7 +123,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method returns the date of birth of an employee
+     * @brief This method returns the date of birth of a teacher
      * @return date of birth
      */
     public String getDateOfBirth() {
@@ -131,7 +131,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method assigns a date of birth to an employee
+     * @brief This method assigns a date of birth to a teacher
      * @param dateOfBirth date of birth
      */
     public void setDateOfBirth(final String dateOfBirth) {
@@ -139,7 +139,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method returns list of contact numbers of an employee
+     * @brief This method returns list of contact numbers of a teacher
      * @return list of contact numbers
      */
     public PhoneNumber[] getContactNumbers() {
@@ -147,7 +147,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method assigns a list of contact number to an employee
+     * @brief This method assigns a list of contact number to a teacher
      * @param contactNumbers list of contact numbers
      */
     public void setContactNumbers(final PhoneNumber[] contactNumbers) {
@@ -155,7 +155,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method returns the list of emergency contacts of an employee
+     * @brief This method returns the list of emergency contacts of a teacher
      * @return list of emergency contacts
      */
     public EmergencyContact[] getEmergencyContacts() {
@@ -163,7 +163,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method assigns a list of emergency contacts to an employee
+     * @brief This method assigns a list of emergency contacts to a teacher
      * @param emergencyContacts list of emergency contacts
      */
     public void setEmergencyContacts(final EmergencyContact[] emergencyContacts) {
@@ -171,7 +171,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method returns the address of an employee
+     * @brief This method returns the address of a teacher
      * @return address
      */
     public Address getAddress() {
@@ -179,7 +179,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method assigns an address to an employee
+     * @brief This method assigns an address to a teacher
      * @param address address
      */
     public void setAddress(final Address address) {
@@ -187,7 +187,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method returns the list of managers of an employee
+     * @brief This method returns the list of managers of a teacher
      * @return list of managers
      */
     public Manager[] getManager() {
@@ -195,15 +195,15 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method assigns a list of managers subject to an employee
-     * @param manager lis of managers
+     * @brief This method assigns a list of managers to a teacher
+     * @param manager list of managers
      */
     public void setManager(final Manager[] manager) {
         this.manager = manager;
     }
 
     /**
-     * @brief This method returns the nationality of an employee
+     * @brief This method returns the nationality of a teacher
      * @return nationality
      */
     public Nationality getNationality() {
@@ -211,7 +211,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method assigns a nationality to an employee
+     * @brief This method assigns a nationality to a teacher
      * @param nationality nationality
      */
     public void setNationality(final Nationality nationality) {
@@ -219,33 +219,33 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method returns the subject taught by an employee
+     * @brief This method returns the subject taught by a teacher
      * @return subject
      */
     public Subject getSubject() { return subject; }
 
     /**
-     * @brief This method assigns a taught subject to an employee
+     * @brief This method assigns a taught subject to a teacher
      * @param subject subject
      */
     public void setSubject(final Subject subject) { this.subject = subject; }
 
 
     /**
-     * @brief This method returns the department of an employee
+     * @brief This method returns the department of a teacher
      * @return department
      */
     public Department getDepartment() { return department;}
 
     /**
-     * @brief This method assigns a department to an employee
+     * @brief This method assigns a department to a teacher
      * @param department department
      */
     public void setDepartment(final Department department) {this.department = department;}
 
 
     /**
-     * @brief This method returns the hire date of an employee
+     * @brief This method returns the hire date of a teacher
      * @return hire date
      */
     public String getHireDate() {
@@ -253,7 +253,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method assigns a hire date  to an employee
+     * @brief This method assigns a hire date to a teacher
      * @param hireDate hire date
      */
     public void setHireDate(final String hireDate) {
@@ -261,7 +261,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method returns the salary amount of an employee
+     * @brief This method returns the salary amount of a teacher
      * @return salary amount
      */
     public int getSalaryAmount() {
@@ -269,7 +269,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method assigns a salary amount to an employee
+     * @brief This method assigns a salary amount to a teacher
      * @param salaryAmount salary amount
      */
     public void setSalaryAmount(final int salaryAmount) {
@@ -277,7 +277,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method returns the salary bonus of an employee
+     * @brief This method returns the salary bonus of a teacher
      * @return salary bonus
      */
     public int getSalaryBonus() {
@@ -285,7 +285,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method assigns a salary bonus to an employee
+     * @brief This method assigns a salary bonus to a teacher
      * @param salaryBonus salary bonus
      */
     public void setSalaryBonus(final int salaryBonus) {
@@ -293,7 +293,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method returns the work location of an employee
+     * @brief This method returns the work location of a teacher
      * @return work location
      */
     public WorkLocation getWorkLocation() {
@@ -301,7 +301,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method assigns a work location to an employee
+     * @brief This method assigns a work location to a teacher
      * @param workLocation work location
      */
     public void setWorkLocation(final WorkLocation workLocation) {
@@ -309,7 +309,7 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method returns the sex of an employee
+     * @brief This method returns the sex of a teacher
      * @return sex
      */
     public Sex getSex() {
@@ -317,12 +317,13 @@ public class Teacher implements Serializable {
     }
 
     /**
-     * @brief This method assigns a sex to an employee
+     * @brief This method assigns a sex to a teacher
      * @param sex sex
      */
     public void setSex(final Sex sex) {
         this.sex = sex;
     }
+
 
     @Override
     public String toString() {

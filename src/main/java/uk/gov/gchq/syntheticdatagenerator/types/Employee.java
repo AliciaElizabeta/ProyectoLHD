@@ -87,146 +87,291 @@ public class Employee implements Serializable {
         return employee;
     }
 
+    /**
+     * @brief This method generates an identifier
+     * @param random random value
+     * @return generated identifier
+     */
     public static String generateUID(final Random random) {
         return String.valueOf(random.nextInt(Integer.MAX_VALUE));
     }
 
+    /**
+     * This method generates a tax code
+     * @return tax code
+     */
     private static String generateTaxCode() {
         return TAX_CODE;
     }
 
+    /**
+     * @brief This method returns the identifier of an employee
+     * @return identifier
+     */
     public String getUid() {
         return uid;
     }
 
+    /**
+     * @brief This method assigns the identifier of an employee
+     * @param uid identifier
+     */
     public void setUid(final String uid) {
         this.uid = uid;
     }
 
+    /**
+     * @brief This method returns the name of an employee
+     * @return name
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * @brief This method assigns a name to an employee
+     * @param name
+     */
     public void setName(final String name) {
         this.name = name;
     }
 
+    /**
+     * @brief This method returns the date of birth of an employee
+     * @return date of birth
+     */
     public String getDateOfBirth() {
         return dateOfBirth;
     }
 
+    /**
+     * @brief This method assigns a date of birth to an employee
+     * @param dateOfBirth date of birth
+     */
     public void setDateOfBirth(final String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
+    /**
+     * @brief This method returns list of contact numbers of an employee
+     * @return list of contact numbers
+     */
     public PhoneNumber[] getContactNumbers() {
         return contactNumbers;
     }
 
+    /**
+     * @brief This method assigns a list of contact number to an employee
+     * @param contactNumbers list of contact numbers
+     */
     public void setContactNumbers(final PhoneNumber[] contactNumbers) {
         this.contactNumbers = contactNumbers;
     }
 
+    /**
+     * @brief This method returns the list of emergency contacts of an employee
+     * @return list of emergency contacts
+     */
     public EmergencyContact[] getEmergencyContacts() {
         return emergencyContacts;
     }
 
+    /**
+     * @brief This method assigns a list of emergency contacts to an employee
+     * @param emergencyContacts list of emergency contacts
+     */
     public void setEmergencyContacts(final EmergencyContact[] emergencyContacts) {
         this.emergencyContacts = emergencyContacts;
     }
 
+    /**
+     * @brief This method returns the address of an employee
+     * @return address
+     */
     public Address getAddress() {
         return address;
     }
 
+    /**
+     * @brief This method assigns an address to an employee
+     * @param address address
+     */
     public void setAddress(final Address address) {
         this.address = address;
     }
 
+    /**
+     * @brief This method return the bank details of an employee
+     * @return bank details
+     */
     public BankDetails getBankDetails() {
         return bankDetails;
     }
 
+    /**
+     * @brief This method assigns the bank details to an employee
+     * @param bankDetails bank details
+     */
     public void setBankDetails(final BankDetails bankDetails) {
         this.bankDetails = bankDetails;
     }
 
+    /**
+     * @brief This method returns the tax code to an employee
+     * @return tax code
+     */
     public String getTaxCode() {
         return taxCode;
     }
 
+    /**
+     * @brief This method assigns the tax code to an employee
+     * @param taxCode tax code
+     */
     public void setTaxCode(final String taxCode) {
         this.taxCode = taxCode;
     }
 
+    /**
+     * @brief This method returns the nationality of an employee
+     * @return nationality
+     */
     public Nationality getNationality() {
         return nationality;
     }
 
+    /**
+     * @brief This method assigns a nationality to an employee
+     * @param nationality nationality
+     */
     public void setNationality(final Nationality nationality) {
         this.nationality = nationality;
     }
 
+    /**
+     * @brief This method returns the list of managers of an employee
+     * @return list of managers
+     */
     public Manager[] getManager() {
         return manager;
     }
 
+    /**
+     * @brief This method assigns a list of managers to an employee
+     * @param manager list of managers
+     */
     public void setManager(final Manager[] manager) {
         this.manager = manager;
     }
 
+    /**
+     * @brief This method returns the hire date of an employee
+     * @return hire date
+     */
     public String getHireDate() {
         return hireDate;
     }
 
+    /**
+     * @brief This method assigns a hire date to an employee
+     * @param hireDate hire date
+     */
     public void setHireDate(final String hireDate) {
         this.hireDate = hireDate;
     }
 
+    /**
+     * @brief This method returns the grade of an employee
+     * @return grade
+     */
     public Grade getGrade() {
         return grade;
     }
 
+    /**
+     * @brief This method assigns a grade to an employee
+     * @param grade grade
+     */
     public void setGrade(final Grade grade) {
         this.grade = grade;
     }
 
+    /**
+     * @brief This method returns the department of an employee
+     * @return department
+     */
     public Department getDepartment() {
         return department;
     }
 
+    /**
+     * @brief This method assigns a department to an employee
+     * @param department department
+     */
     public void setDepartment(final Department department) {
         this.department = department;
     }
 
+    /**
+     * @brief This method returns the salary amount of an employee
+     * @return salary amount
+     */
     public int getSalaryAmount() {
         return salaryAmount;
     }
 
+    /**
+     * @brief This method assigns a salary amount to an employee
+     * @param salaryAmount salary amount
+     */
     public void setSalaryAmount(final int salaryAmount) {
         this.salaryAmount = salaryAmount;
     }
 
+    /**
+     * @brief This method returns the salary bonus of an employee
+     * @return salary bonus
+     */
     public int getSalaryBonus() {
         return salaryBonus;
     }
 
+    /**
+     * @brief This method assigns a salary bonus to an employee
+     * @param salaryBonus salary bonus
+     */
     public void setSalaryBonus(final int salaryBonus) {
         this.salaryBonus = salaryBonus;
     }
 
+    /**
+     * @brief This method returns the work location of an employee
+     * @return work location
+     */
     public WorkLocation getWorkLocation() {
         return workLocation;
     }
 
+    /**
+     * @brief This method assigns a work location to an employee
+     * @param workLocation work location
+     */
     public void setWorkLocation(final WorkLocation workLocation) {
         this.workLocation = workLocation;
     }
 
+    /**
+     * @brief This method returns the sex of an employee
+     * @return sex
+     */
     public Sex getSex() {
         return sex;
     }
 
+    /**
+     * @brief This method assigns a sex to an employee
+     * @param sex sex
+     */
     public void setSex(final Sex sex) {
         this.sex = sex;
     }
