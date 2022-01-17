@@ -19,10 +19,12 @@ package uk.gov.gchq.syntheticdatagenerator.types;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.StringJoiner;
+import java.io.Serializable;
+
 
 import static java.util.Objects.requireNonNull;
 
-public class Manager {
+public class Manager implements Serializable {
     private String uid;
     private Manager[] managers;
     private String managerType;

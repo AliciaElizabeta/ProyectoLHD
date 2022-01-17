@@ -20,8 +20,10 @@ import com.github.javafaker.Faker;
 
 import java.util.Random;
 import java.util.StringJoiner;
+import java.io.Serializable;
 
-public class WorkLocation {
+
+public class WorkLocation implements Serializable{
     private WorkLocationName workLocationName;
     private Address address;
 
