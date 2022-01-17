@@ -79,24 +79,44 @@ public class Manager implements Serializable {
         return manager;
     }
 
+    /**
+     * @brief This method returns the identifier
+     * @return identifier
+     */
     public String getUid() {
         return uid;
     }
 
+    /**
+     * @brief This method assigns an identifiers
+     * @param uid identifier
+     */
     public void setUid(final String uid) {
         requireNonNull(uid);
         this.uid = uid;
     }
 
+    /**
+     * @brief This method returns the manager type
+     * @return manager type
+     */
     public String getManagerType() {
         return managerType;
     }
 
+    /**
+     * @brief This method assigns a manager type
+     * @param managerType manager type
+     */
     public void setManagerType(final String managerType) {
         requireNonNull(managerType);
         this.managerType = managerType;
     }
 
+    /**
+     * @brief This method returns the list of managers
+     * @return list of managers
+     */
     public Manager[] getManager() {
         if (null == managers) {
             return new Manager[0];
@@ -105,6 +125,10 @@ public class Manager implements Serializable {
         }
     }
 
+    /**
+     * @brief This method assigns a list of managers
+     * @param managers list of managers
+     */
     public void setManager(final Manager[] managers) {
         if (null == managers) {
             this.managers = null;
