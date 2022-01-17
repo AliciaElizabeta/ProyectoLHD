@@ -44,18 +44,34 @@ public class BankDetails implements Serializable{
         return bankDetails;
     }
 
+    /**
+     * @brief This method returns a sort code
+     * @return sort code
+     */
     public String getSortCode() {
         return sortCode;
     }
 
+    /**
+     * @brief This method assigns a sort code
+     * @param sortCode sort code
+     */
     public void setSortCode(final String sortCode) {
         this.sortCode = sortCode;
     }
 
+    /**
+     * @brief This method returns an account number
+     * @return account number
+     */
     public String getAccountNumber() {
         return accountNumber;
     }
 
+    /**
+     * @brief This method assigns an account number
+     * @param accountNumber account number
+     */
     public void setAccountNumber(final String accountNumber) {
         this.accountNumber = accountNumber;
     }

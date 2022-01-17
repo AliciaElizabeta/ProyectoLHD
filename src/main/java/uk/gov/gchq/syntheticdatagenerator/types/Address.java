@@ -51,42 +51,86 @@ public class Address implements Serializable {
         return address;
     }
 
+    /**
+     * @brief This method returns the street address number
+     * @return street address number
+     */
     public String getStreetAddressNumber() {
         return streetAddressNumber;
     }
 
+    /**
+     * @brief This method assigns a street number address
+     * @param streetAddressNumber street number address
+     */
     public void setStreetAddressNumber(final String streetAddressNumber) {
         this.streetAddressNumber = streetAddressNumber;
     }
 
+
+    /**
+     * @brief This method returns the street name
+     * @return street name
+     */
     public String getStreetName() {
         return streetName;
     }
 
+    /**
+     * @brief This method assigns a street name
+     * @param streetName street name
+     */
     public void setStreetName(final String streetName) {
         this.streetName = streetName;
     }
 
+
+    /**
+     * @brief This method returns the city
+     * @return city
+     */
     public String getCity() {
         return city;
     }
 
+    /**
+     * @brief This method assigns a city
+     * @param city city
+     */
     public void setCity(final String city) {
         this.city = city;
     }
 
+
+    /**
+     * @brief This method returns the state
+     * @return state
+     */
     public String getState() {
         return state;
     }
 
+    /**
+     * @brief This method assigns a state
+     * @param state state
+     */
     public void setState(final String state) {
         this.state = state;
     }
 
+
+    /**
+     * @brief This method returns the zip code of a city
+     * @return zip code
+     */
     public String getZipCode() {
         return zipCode;
     }
 
+    /**
+     * @brief This method assigns the zip code of a country
+     * @param zipCode zip code
+     */
     public void setZipCode(final String zipCode) {
         this.zipCode = zipCode;
     }

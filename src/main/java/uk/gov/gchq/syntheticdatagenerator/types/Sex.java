@@ -32,6 +32,11 @@ public enum Sex {
     FEMALE,
     NOT_SPECIFIED;
 
+    /**
+     * @brief This method generates a person's sex
+     * @param random random value
+     * @return sex
+     */
     public static Sex generate(final Random random) {
         return Sex.values()[random.nextInt(Sex.values().length)];
     }

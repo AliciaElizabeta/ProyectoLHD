@@ -71,18 +71,35 @@ public class PhoneNumber implements Serializable {
         return phoneNumber;
     }
 
+    /**
+     * @brief This method returns the phone number type
+     * @return phone number type
+     */
     public String getType() {
         return type;
     }
 
+
+    /**
+     * @brief This method assigns a phone number type
+     * @param type phone number type
+     */
     public void setType(final String type) {
         this.type = type;
     }
 
+    /**
+     * @brief This method returns the phone number
+     * @return phone number
+     */
     public String getPhoneNumber() {
         return number;
     }
 
+    /**
+     * @brief This method assigns a phone number
+     * @param phoneNumber phone number
+     */
     public void setPhoneNumber(final String phoneNumber) {
         this.number = phoneNumber;
     }

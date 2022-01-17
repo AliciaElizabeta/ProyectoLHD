@@ -29,6 +29,11 @@ public enum Relation {
     CHILDREN,
     COUSIN;
 
+    /**
+     * @brief This method generates a relation
+     * @param random random value
+     * @return relation
+     */
     public static Relation generate(final Random random) {
         return Relation.values()[random.nextInt(Relation.values().length)];
     }

@@ -32,6 +32,11 @@ public enum Grade {
     GRADE_7,
     GRADE_8;
 
+    /**
+     * @brief This method generates a grade
+     * @param random random value
+     * @return grade
+     */
     public static Grade generate(final Random random) {
         return Grade.values()[random.nextInt(Grade.values().length)];
     }

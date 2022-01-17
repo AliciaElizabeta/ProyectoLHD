@@ -38,6 +38,11 @@ public enum Department {
     HIGHER_POLYTECHNIC_SCHOOL_OF_ENGINEERING_AND_TECHNOLOGY,
     SCHOOL_DOCTORAL_AND_GRADUATES_STUDIES;
 
+    /**
+     * @brief This method generates a department
+     * @param random random value
+     * @return department
+     */
     public static Department generate(final Random random) {
         return Department.values()[random.nextInt(Department.values().length)];
     }

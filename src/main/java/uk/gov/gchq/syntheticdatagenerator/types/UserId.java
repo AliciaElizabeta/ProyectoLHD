@@ -58,10 +58,18 @@ public class UserId implements Serializable {
         return this;
     }
 
+    /**
+     *@brief This method returns the identifier
+     * @return identifier
+     */
     public String getId() {
         return id;
     }
 
+    /**
+     * @brief This method assigns the identifier
+     * @param id identifier
+     */
     public void setId(final String id) {
         requireNonNull(id);
         this.id = id;

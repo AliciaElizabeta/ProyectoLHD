@@ -26,6 +26,11 @@ public enum Subject {
     SISTEMAS_Y_TECNOLOGIAS_WEB,
     GESTION_DEL_CONOCIMIENTO_EN_LAS_ORGANIZACIONES;
 
+    /**
+     * @brief This method generates subjects
+     * @param random random value
+     * @return subjects
+     */
     public static Subject generate(final Random random) {
         return Subject.values()[random.nextInt(Subject.values().length)];
     }

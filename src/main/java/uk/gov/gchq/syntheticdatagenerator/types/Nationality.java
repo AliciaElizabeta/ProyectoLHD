@@ -248,6 +248,11 @@ public enum Nationality {
     ZAMBIAN,
     ZIMBABWEAN;
 
+    /**
+     * @brief This method generates a nationality
+     * @param random random value
+     * @return nationality
+     */
     public static Nationality generate(final Random random) {
         return Nationality.values()[random.nextInt(Nationality.values().length)];
     }

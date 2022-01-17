@@ -43,18 +43,34 @@ public class WorkLocation implements Serializable{
         return workLocation;
     }
 
+    /**
+     * @brief This method returns the work location of a person
+     * @return work location
+     */
     public WorkLocationName getWorkLocationName() {
         return workLocationName;
     }
 
+    /**
+     * @brief This method assigns a work location to a person
+     * @param workLocationName work Location
+     */
     public void setWorkLocationName(final WorkLocationName workLocationName) {
         this.workLocationName = workLocationName;
     }
 
+    /**
+     * @brief This method returns the address of a person
+     * @return address
+     */
     public Address getAddress() {
         return address;
     }
 
+    /**
+     * @brief This method assigns an address to a person
+     * @param address address
+     */
     public void setAddress(final Address address) {
         this.address = address;
     }

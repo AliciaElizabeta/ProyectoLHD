@@ -63,6 +63,11 @@ public enum WorkLocationName {
     SAN_CRISTOBAL_DE_LA_LAGUNA;
 
 
+    /**
+     * @brief This method generates a Work Location
+     * @param random random value
+     * @return work location name
+     */
     public static WorkLocationName generate(final Random random) {
         return WorkLocationName.values()[random.nextInt(WorkLocationName.values().length)];
     }

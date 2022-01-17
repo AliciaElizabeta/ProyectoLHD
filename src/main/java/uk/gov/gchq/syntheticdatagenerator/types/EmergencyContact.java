@@ -65,26 +65,52 @@ public class EmergencyContact implements Serializable{
         return emergencyContacts;
     }
 
+    /**
+     * @brief This method returns the contact name
+     * @return contact name
+     */
     public String getContactName() {
         return contactName;
     }
 
+    /**
+     * @brief This method assigns the contact name
+     * @param contactName contact name
+     */
     public void setContactName(final String contactName) {
         this.contactName = contactName;
     }
 
+
+    /**
+     * @brief This method returns the relation
+     * @return relation
+     */
     public Relation getRelation() {
         return relation;
     }
 
+
+    /**
+     * @brief This method assigns the relation
+     * @param relation relation
+     */
     public void setRelation(final Relation relation) {
         this.relation = relation;
     }
 
+    /**
+     * @brief This method returns the list of contact numbers
+     * @return list of contact numbers
+     */
     public PhoneNumber[] getContactNumbers() {
         return contactNumbers;
     }
 
+    /**
+     * @brief This method assigns the list of contact numbers
+     * @param contactNumbers list of contact numbers
+     */
     public void setContactNumbers(final PhoneNumber[] contactNumbers) {
         this.contactNumbers = contactNumbers;
     }
