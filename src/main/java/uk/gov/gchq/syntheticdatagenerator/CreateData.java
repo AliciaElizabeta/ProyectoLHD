@@ -35,8 +35,8 @@ public final class CreateData {
     private static final int NUM_EMPLOYEES_ARG = 1;
     private static final int NUM_FILES_ARG = 2;
     private static final int NUM_THREADS_ARG = 3;
-    private static final int isCSVout = 1;
-    private static final String ocupation = "E";
+    private static final int IS_CSV_OUT = 1;
+    private static final String OCUPATION = "E";
 
     private CreateData() {
     }
@@ -53,11 +53,11 @@ public final class CreateData {
             int numberOfThreads = numberOfFiles;
             // Optional additional arguments overriding default values
             int csvFileExecution = 1;
-            String job = ocupation;
+            String job = OCUPATION;
             if (args.length > MINIMUM_ARGS) {
                 numberOfThreads = Integer.parseInt(args[NUM_THREADS_ARG]);
                 //1 para ejecucion sin csv y 0 para ejecucion modo csv
-                csvFileExecution = Integer.parseInt(args[isCSVout]);
+                csvFileExecution = Integer.parseInt(args[IS_CSV_OUT]);
             }
             long startTime = System.currentTimeMillis();
             ExecutorService executors = Executors.newFixedThreadPool(numberOfThreads, createDaemonThreadFactory());
