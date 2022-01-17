@@ -23,7 +23,6 @@ import uk.gov.gchq.syntheticdatagenerator.types.Teacher;
 import java.io.File;
 import java.util.Random;
 
-
 public class TeacherTest {
 
     @Test
@@ -34,7 +33,7 @@ public class TeacherTest {
             Teacher t = Teacher.generate(random);
         }
         long endTime = System.currentTimeMillis();
-        System.out.println("Took " + (endTime - startTime) + "ms to create 100 employees");
+        System.out.println("Took " + (endTime - startTime) + "ms to create 100 teachers");
     }
 
     @Test

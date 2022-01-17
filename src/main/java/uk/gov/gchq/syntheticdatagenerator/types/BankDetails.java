@@ -21,7 +21,10 @@ import java.util.Random;
 import java.util.StringJoiner;
 import java.io.Serializable;
 
-
+/**
+ * @class Bank Details
+ * @brief This class creates random values for a bank account
+ */
 public class BankDetails implements Serializable{
     private static final int SORT_CODE_DIGITS = 6;
     private static final int ACCOUNT_NUMBER_DIGITS = 8;

@@ -18,6 +18,10 @@ package uk.gov.gchq.syntheticdatagenerator.types;
 
 import java.util.Random;
 
+/**
+ * @enum Department
+ * @brief This enum class lists all the different faculties at ULL University
+ */
 public enum Department {
     EDUCATION,
     HEALTH_SCIENCES,

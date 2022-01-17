@@ -22,6 +22,10 @@ import java.util.Random;
 import java.util.StringJoiner;
 import java.io.Serializable;
 
+/**
+ * @class Address
+ * @brief This class creates random values for an address
+ */
 public class Address implements Serializable {
 
     private String streetAddressNumber;

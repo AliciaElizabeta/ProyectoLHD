@@ -24,11 +24,22 @@ import java.io.Serializable;
 
 import static java.util.Objects.requireNonNull;
 
+/**
+ * @class Manager
+ * @brief This class creates random values for a manager
+ * @details When creating a Manager entity it is possible to create up to 3 levels of managers
+ */
 public class Manager implements Serializable {
     private String uid;
     private Manager[] managers;
     private String managerType;
 
+    /**
+     * @brief This method allows to create a number of different levels of managers
+     * @param random random value
+     * @param chain level depth of managers
+     * @return different managers levels
+     */
     public static Manager[] generateMany(final Random random, final int chain) {
         return new Manager[]{
                 generateRecursive(random, chain, "Line Manager"),
@@ -37,7 +48,13 @@ public class Manager implements Serializable {
         };
     }
 
-
+    /**
+     * @brief This method evaluates the different levels of managers defined
+     * @param random random value
+     * @param chain level depth of managers
+     * @param managerType type of manager
+     * @return manager
+     */
     public static Manager generateRecursive(final Random random, final int chain, final String managerType) {
         Manager manager = Manager.generate(random, managerType);
         if (chain <= 1) {
@@ -48,6 +65,12 @@ public class Manager implements Serializable {
         return manager;
     }
 
+    /**
+     * @brief This method generates a new manager
+     * @param random random value
+     * @param managerType type of manager
+     * @return manager
+     */
     public static Manager generate(final Random random, final String managerType) {
         Manager manager = new Manager();
         manager.setUid(Employee.generateUID(random));

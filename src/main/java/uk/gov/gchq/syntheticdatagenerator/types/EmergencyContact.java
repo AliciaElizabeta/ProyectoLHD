@@ -24,7 +24,10 @@ import java.util.Random;
 import java.util.StringJoiner;
 import java.io.Serializable;
 
-
+/**
+ * @class Emergency Contact
+ * @brief This class creates random values for an emergercy contact
+ */
 public class EmergencyContact implements Serializable{
     private static final int MAX_EXTRA_CONTACTS = 4;
     private String contactName;

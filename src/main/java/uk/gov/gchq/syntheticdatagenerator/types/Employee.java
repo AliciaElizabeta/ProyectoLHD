@@ -25,6 +25,10 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.StringJoiner;
 
+/**
+ * @class Employee
+ * @brief This class generates random values for the entity Employee
+ */
 public class Employee implements Serializable {
     private static final long serialVersionUID = 1L;
     private static final int MIN_MANGERS_TREE_HEIGHT = 2;
