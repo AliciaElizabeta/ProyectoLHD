@@ -58,7 +58,7 @@ public class Employee implements Serializable {
 
     /**
      * @class Employee
-     * @brief This class generates random values for an employee
+     * @brief This method generates random values for an employee
      * @param random random value
      * @return generated employees
      */

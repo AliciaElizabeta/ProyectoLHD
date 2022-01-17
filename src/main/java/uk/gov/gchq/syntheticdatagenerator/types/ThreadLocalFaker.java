@@ -23,6 +23,10 @@ import java.util.Random;
 
 import static java.util.Objects.requireNonNull;
 
+/**
+ * @class Thread Local Faker
+ * @brief This class generates fake data
+ */
 public final class ThreadLocalFaker {
 
     private static ThreadLocal<Faker> faker = new ThreadLocal<>();
@@ -31,6 +35,11 @@ public final class ThreadLocalFaker {
     private ThreadLocalFaker() {
     }
 
+    /**
+     * @brief This method generates fake data
+     * @param random random valued
+     * @return generated fake data
+     */
     public static Faker getFaker(final Random random) {
         requireNonNull(random, "random");
         if (currentRandom.get() == null || random != currentRandom.get()) {

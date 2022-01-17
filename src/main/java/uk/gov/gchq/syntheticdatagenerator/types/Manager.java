@@ -42,8 +42,8 @@ public class Manager implements Serializable {
      */
     public static Manager[] generateMany(final Random random, final int chain) {
         return new Manager[]{
-                generateRecursive(random, chain, "Line Manager"),
-                generateRecursive(random, chain, "Task Manager"),
+                generateRecursive(random, chain, "Human Resources Manager"),
+                generateRecursive(random, chain, "Department Manager"),
                 generateRecursive(random, chain, "Career Manager")
         };
     }

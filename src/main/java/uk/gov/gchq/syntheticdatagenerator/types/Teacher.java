@@ -25,6 +25,10 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.StringJoiner;
 
+/**
+ * @class Teacher
+ * @brief This class generates random values for the entity Teacher
+ */
 public class Teacher implements Serializable {
     private static final long serialVersionUID = 1L;
     private static final int MIN_MANGERS_TREE_HEIGHT = 2;
@@ -49,7 +53,11 @@ public class Teacher implements Serializable {
     private WorkLocation workLocation;
     private Sex sex;
 
-
+    /**
+     * @brief This method generates random values for a teacher
+     * @param random random value
+     * @return generated teachers
+     */
     public static Teacher generate(final Random random) {
         Teacher teacher = new Teacher();
         Faker faker = ThreadLocalFaker.getFaker(random);
