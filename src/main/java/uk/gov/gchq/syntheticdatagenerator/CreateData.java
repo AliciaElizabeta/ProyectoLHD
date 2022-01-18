@@ -41,7 +41,7 @@ public final class CreateData {
     private static final int NUM_FILES_ARG = 2;
     private static final int NUM_THREADS_ARG = 3;
     private static final int IS_CSV_OUT = 1;
-    private static final char OCUPATION = "E";
+    private static final char OCUPATION = 'E';
 
     private CreateData() {
     }

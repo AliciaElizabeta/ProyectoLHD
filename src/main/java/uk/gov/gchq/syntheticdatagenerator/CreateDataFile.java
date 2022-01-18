@@ -63,7 +63,7 @@ public final class CreateDataFile implements Callable<Boolean> {
             }
         }
         try (OutputStream out = new FileOutputStream(outputFile)) {
-            if(ocupation.equals("E")){
+            if(ocupation.equals('E')){
                 AvroSerialiser<Employee> employeeAvroSerialiser = new AvroSerialiser<>(Employee.class);
 
                 // Need at least one Employee
@@ -89,7 +89,7 @@ public final class CreateDataFile implements Callable<Boolean> {
                 return true;
 
             }
-            else if(ocupation.equals("T")){
+            else if(ocupation.equals('T')){
                 AvroSerialiser<Teacher> teacherAvroSerialiser = new AvroSerialiser<>(Teacher.class);
 
                 // Need at least one Employee
