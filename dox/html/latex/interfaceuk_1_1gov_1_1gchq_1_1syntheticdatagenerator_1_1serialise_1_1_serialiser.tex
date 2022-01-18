@@ -1,0 +1,98 @@
+\hypertarget{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser}{}\doxysection{uk.\+gov.\+gchq.\+syntheticdatagenerator.\+serialise.\+Serialiser\texorpdfstring{$<$}{<} I \texorpdfstring{$>$}{>} Interface Template Reference}
+\label{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser}\index{uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$@{uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$}}
+Inheritance diagram for uk.\+gov.\+gchq.\+syntheticdatagenerator.\+serialise.\+Serialiser\texorpdfstring{$<$}{<} I \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser_a1f06bb0aa5a5630cfc5d49666897574f}{serialise}} (final Stream$<$ I $>$ objects, final Output\+Stream output)  throws IOException
+\item 
+Stream$<$ I $>$ \mbox{\hyperlink{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser_a8dd2c5546544450f53f06a93e5ded051}{deserialise}} (final Input\+Stream stream)  throws IOException
+\item 
+default String \mbox{\hyperlink{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser_a98265caef3bfb8ea0052b20df8f953d9}{get\+Class\+Name}} ()
+\item 
+default void \mbox{\hyperlink{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser_acdf93abc46f7aff80db6580b4909e18a}{set\+Class\+Name}} (final String class\+Name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\bfseries{IMPORTANT\+:}} All instances of this interface must be thread safe. That is, they must support multiple threads performing calling either \mbox{\hyperlink{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser_a8dd2c5546544450f53f06a93e5ded051}{Serialiser\#deserialise(\+Input\+Stream)}} or \mbox{\hyperlink{}{Serialiser\#serialise(\+Stream, Output\+Stream)}} concurrently. The easiest and recommended way to do this is to make the 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serialiser }
+
+\end{DoxyCode}
+ instance stateless; don\textquotesingle{}t store anything related to a particular de/serialisation operation in class member fields. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser_a8dd2c5546544450f53f06a93e5ded051}\label{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser_a8dd2c5546544450f53f06a93e5ded051}} 
+\index{uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$@{uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$}!deserialise@{deserialise}}
+\index{deserialise@{deserialise}!uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$@{uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$}}
+\doxysubsubsection{\texorpdfstring{deserialise()}{deserialise()}}
+{\footnotesize\ttfamily Stream$<$ I $>$ \mbox{\hyperlink{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser}{uk.\+gov.\+gchq.\+syntheticdatagenerator.\+serialise.\+Serialiser}}$<$ I $>$.deserialise (\begin{DoxyParamCaption}\item[{final Input\+Stream}]{stream }\end{DoxyParamCaption}) throws IOException}
+
+Deserialise an \mbox{\hyperlink{}{Input\+Stream}} into a \mbox{\hyperlink{}{Stream}} of objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & the input stream to deserialise \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the deserialised object 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if the input stream couldn\textquotesingle{}t be read from. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser_a98265caef3bfb8ea0052b20df8f953d9}\label{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser_a98265caef3bfb8ea0052b20df8f953d9}} 
+\index{uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$@{uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$}!getClassName@{getClassName}}
+\index{getClassName@{getClassName}!uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$@{uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$}}
+\doxysubsubsection{\texorpdfstring{getClassName()}{getClassName()}}
+{\footnotesize\ttfamily default String \mbox{\hyperlink{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser}{uk.\+gov.\+gchq.\+syntheticdatagenerator.\+serialise.\+Serialiser}}$<$ I $>$.get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser_a1f06bb0aa5a5630cfc5d49666897574f}\label{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser_a1f06bb0aa5a5630cfc5d49666897574f}} 
+\index{uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$@{uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$}!serialise@{serialise}}
+\index{serialise@{serialise}!uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$@{uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$}}
+\doxysubsubsection{\texorpdfstring{serialise()}{serialise()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser}{uk.\+gov.\+gchq.\+syntheticdatagenerator.\+serialise.\+Serialiser}}$<$ I $>$.serialise (\begin{DoxyParamCaption}\item[{final Stream$<$ I $>$}]{objects,  }\item[{final Output\+Stream}]{output }\end{DoxyParamCaption}) throws IOException}
+
+Serialises a \mbox{\hyperlink{}{Stream}} of objects to an \mbox{\hyperlink{}{Output\+Stream}}. If 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{objects }
+
+\end{DoxyCode}
+ is 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{null} }
+
+\end{DoxyCode}
+ , then nothing will be written.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & the stream of objects to be serialised \\
+\hline
+{\em output} & the output stream to write the serialised bytes to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if something fails while writing the object stream \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser_acdf93abc46f7aff80db6580b4909e18a}\label{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser_acdf93abc46f7aff80db6580b4909e18a}} 
+\index{uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$@{uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$}!setClassName@{setClassName}}
+\index{setClassName@{setClassName}!uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$@{uk.gov.gchq.syntheticdatagenerator.serialise.Serialiser$<$ I $>$}}
+\doxysubsubsection{\texorpdfstring{setClassName()}{setClassName()}}
+{\footnotesize\ttfamily default void \mbox{\hyperlink{interfaceuk_1_1gov_1_1gchq_1_1syntheticdatagenerator_1_1serialise_1_1_serialiser}{uk.\+gov.\+gchq.\+syntheticdatagenerator.\+serialise.\+Serialiser}}$<$ I $>$.set\+Class\+Name (\begin{DoxyParamCaption}\item[{final String}]{class\+Name }\end{DoxyParamCaption})}
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+java/uk/gov/gchq/syntheticdatagenerator/serialise/\mbox{\hyperlink{_serialiser_8java}{Serialiser.\+java}}\end{DoxyCompactItemize}
