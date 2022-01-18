@@ -52,6 +52,10 @@ public class AvroSerialiser<O> implements Serialiser<O> {
     private final Class<O> domainClass;
     private final Schema schema;
 
+    /**
+     * @brief This method builds a domain in order to create serialization in avro format
+     * @param domainClass class domain
+     */
     @JsonCreator
     public AvroSerialiser(@JsonProperty("domainClass") final Class<O> domainClass) {
         requireNonNull(domainClass, "domainClass is required");
@@ -60,6 +64,12 @@ public class AvroSerialiser<O> implements Serialiser<O> {
         this.datumWriter = new ReflectDatumWriter<>(schema);
     }
 
+    /**
+     * @brief This method deserializes the format of the input data
+     * @param input the stream of objects to be deserialized
+     * @return the output stream
+     * @throws IOException found problems in the deserialization process
+     */
     @Override
     public Stream<O> deserialise(final InputStream input) throws IOException {
         DataFileStream<O> in;
@@ -70,6 +80,12 @@ public class AvroSerialiser<O> implements Serialiser<O> {
         return StreamSupport.stream(in.spliterator(), false);
     }
 
+    /**
+     * @brief This method serialize the format of the input data
+     * @param objects the stream of objects to be serialised
+     * @param output  the output stream to write the serialised bytes to
+     * @throws IOException found problems in the serialization process
+     */
     @Override
     public void serialise(final Stream<O> objects, final OutputStream output) throws IOException {
         requireNonNull(output, "output");
@@ -102,6 +118,10 @@ public class AvroSerialiser<O> implements Serialiser<O> {
         }
     }
 
+    /**
+     * @brief This class return the domain class
+     * @return the domain class
+     */
     public Class<O> getDomainClass() {
         return domainClass;
     }
