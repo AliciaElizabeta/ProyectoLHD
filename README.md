@@ -70,7 +70,7 @@ class Teacher {
 The manager field is an array of manager, which could potentially be nested several layers deep, in the generated example manager is nested 3-5 layers deep.
 
 
-## Format generated data
+## Generated data format
 
 It is possible to print the generated data in two different format:
 - CSV format
@@ -78,7 +78,7 @@ It is possible to print the generated data in two different format:
 
 This option will be available to the end user when executing the command of generating the data.
 
-## Selection of the data 
+## Data selection
 
 This synthetic data generator allows the user to select whether the generated records are going to be in an **Employee** or a **Teacher** format.
 
@@ -131,7 +131,9 @@ It does not affect the correct execution of the command if the TYPE generated is
 ## Authors
 
 Alicia Marrero Ravelo - alu0101221960@ull.edu.es
+
 Laura González González - alu0101203942@ull.edu.es
+
 Laura Manzini - alu0101531700@ull.edu.es
 
 
