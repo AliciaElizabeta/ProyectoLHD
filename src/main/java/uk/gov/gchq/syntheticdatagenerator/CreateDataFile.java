@@ -64,38 +64,60 @@ public final class CreateDataFile implements Callable<Boolean> {
         }
         try (OutputStream out = new FileOutputStream(outputFile)) {
             if(ocupation.equals("E")){
+                AvroSerialiser<Employee> employeeAvroSerialiser = new AvroSerialiser<>(Employee.class);
+
+                // Need at least one Employee
+                Employee firstEmployee = Employee.generate(random);
+                Manager[] managers = firstEmployee.getManager();
+                managers[0].setUid("Bob");
+                firstEmployee.setManager(managers);
+
+                // Create more employees if needed
+                Stream<Employee> employeeStream = Stream.of(firstEmployee);
+                if (numberOfEmployees > 1) {
+                    if(isCSVFile == false){
+                        employeeStream = Stream.concat(employeeStream, generateStreamOfEmployees());
+                    }
+                    else{
+                        Stream aux = Stream.of(";");
+                        employeeStream = Stream.concat(employeeStream, aux);
+                        employeeStream = Stream.concat(employeeStream, generateStreamOfEmployees());
+                    }
+                }
+                // Serialise stream to output
+                employeeAvroSerialiser.serialise(employeeStream, out);
+                return true;
 
             }
             else if(ocupation.equals("T")){
+                AvroSerialiser<Teacher> teacherAvroSerialiser = new AvroSerialiser<>(Teacher.class);
 
-            }
-            else{
-                
-            }
-            AvroSerialiser<Employee> employeeAvroSerialiser = new AvroSerialiser<>(Employee.class);
+                // Need at least one Employee
+                Teacher firstEmployee = Teacher.generate(random);
+                Manager[] managers = firstEmployee.getManager();
+                managers[0].setUid("Bob");
+                firstEmployee.setManager(managers);
 
-            // Need at least one Employee
-            Employee firstEmployee = Employee.generate(random);
-            Manager[] managers = firstEmployee.getManager();
-            managers[0].setUid("Bob");
-            firstEmployee.setManager(managers);
-
-            // Create more employees if needed
-            Stream<Employee> employeeStream = Stream.of(firstEmployee);
-            if (numberOfEmployees > 1) {
-                if(isCSVFile == false){
-                    employeeStream = Stream.concat(employeeStream, generateStreamOfEmployees());
+                // Create more employees if needed
+                Stream<Teacher> teacherStream = Stream.of(firstEmployee);
+                if (numberOfEmployees > 1) {
+                    if(isCSVFile == false){
+                        teacherStream = Stream.concat(teacherStream, generateStreamOfTeacher());
+                    }
+                    else{
+                        Stream aux = Stream.of(";");
+                        teacherStream = Stream.concat(teacherStream, aux);
+                        teacherStream = Stream.concat(teacherStream, generateStreamOfTeacher());
+                    }
                 }
-                else{
-                    Stream aux = Stream.of(";");
-                    employeeStream = Stream.concat(employeeStream, aux);
-                    employeeStream = Stream.concat(employeeStream, generateStreamOfEmployees());
-                }
-            }
 
-            // Serialise stream to output
-            employeeAvroSerialiser.serialise(employeeStream, out);
-            return true;
+                // Serialise stream to output
+                teacherAvroSerialiser.serialise(teacherStream, out);
+                return true;
+
+            }
+            
+            
         } catch (IOException ex) {
             LOGGER.error("IOException when serialising Employee to Avro", ex);
             return false;
@@ -114,6 +136,20 @@ public final class CreateDataFile implements Callable<Boolean> {
         // Excluding the one employee we had to generate above
         return employeeStream.limit(numberOfEmployees - 1);
     }
+
+    private Stream<Teacher> generateStreamOfTeacher() {
+        LOGGER.info("Generating {} employees", numberOfEmployees);
+        final AtomicLong counter = new AtomicLong(0);
+        Stream<Teacher> teacherStream = Stream.generate(() -> {
+            if (counter.incrementAndGet() % PRINT_EVERY == 0) {
+                LOGGER.info("Processing {} of {}", counter.get(), numberOfEmployees);
+            }
+            return Teacher.generate(random);
+        });
+        // Excluding the one employee we had to generate above
+        return teacherStream.limit(numberOfEmployees - 1);
+    }
+
 
     private byte[] longToBytes(long x) {
         ByteBuffer buffer = ByteBuffer.allocate(Long.BYTES);
