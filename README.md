@@ -69,6 +69,22 @@ class Teacher {
 ```
 The manager field is an array of manager, which could potentially be nested several layers deep, in the generated example manager is nested 3-5 layers deep.
 
+
+## Format generated data
+
+It is possible to print the generated data in two different format:
+- CSV format
+- AVRO format
+
+This option will be available to the end user when executing the command of generating the data.
+
+## Selection of the data 
+
+This synthetic data generator allows the user to select whether the generated records are going to be in an **Employee** or a **Teacher** format.
+
+This option will be available to the end user when executing the command of generating the data.
+
+
 ## Get Started
 To use the generator you will need to have installed (git, maven and JDK 11).  
 To get started first clone this repo locally.
@@ -86,24 +102,39 @@ mvn clean install
 then to start the generator:
 
 ```bash
-.createHRData.sh PATH EMPLOYEES FILES [THREADS]
+.createHRData.sh [PATH] [PEOPLE] [FILES] [THREADS] [OUTPUT] [TYPE]
 ```
+
 where:
 - PATH is the relative path to generate the files
-- EMPLOYEES is the number of employee records to create
+- PEOPLE is the number of people records to create
 - FILES is the number of files to spread them over
-- THREADS (optional) specifies the number of threads to use.
+- THREADS (optional) specifies the number of threads to use
+- OUTPUT is the type of output we want to generate. If the value is set to 1 we will obtain a **csv** output file and if the value is set to 0 we will obtain an **avro** output file
+- TYPE is the type of records we want to generate. If we select the value "e" we will obtain **employee** records and if the value is set to "t" we will obtain teacher records
 
-For example to generate 1,000,000 employee records, spread over 15 files, running the program with 4 threads, and writing the output files to /data/employee:
+For example to generate 1,000,000 employee records, spread over 15 files, running the program with 4 threads, generating a csv output file and writing the output to /data/employee :
 
 ```bash
-.createHRData.sh data/employee 1000000 15 4
+.createHRData.sh data/employee 1000000 15 4 1 e 
 ```
 
-## Print generated data
-It is possible to print the generated data in a *csv* format
+For example to generate 1,000,000 teacher records, spread over 15 files, running the program with 4 threads, generating an avro output file and writing the output to /data/employee:
+
+```bash
+.createHRData.sh data/employee 1000000 15 4 0 t 
+```
+
+Note:
+It does not affect the correct execution of the command if the TYPE generated is written in capital letters or not. The system will automatically recognize what type of data to generate.
+
+## Authors
+
+Alicia Marrero Ravelo - alu0101221960@ull.edu.es
+Laura González González - alu0101203942@ull.edu.es
+Laura Manzini - alu0101531700@ull.edu.es
 
 
 [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=alu0101221960_ProyectoLHD)
 
-[![CircleCI](https://circleci.com/gh/proyectolhd/proyectolhd.svg?style=svg?circle-token=4492874ff7474bfd6b66ec0b236e6fccfc996b25)](https://app.circleci.com/pipelines/github/alu0101221960/ProyectoLHD)
+[![CircleCI](https://circleci.com/gh/alu0101221960/ProyectoLHD/tree/main.svg?style=svg)](https://circleci.com/gh/alu0101221960/ProyectoLHD/tree/main)
