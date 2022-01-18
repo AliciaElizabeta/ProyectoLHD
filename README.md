@@ -138,5 +138,16 @@ Laura Manzini - alu0101531700@ull.edu.es
 
 
 [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=alu0101221960_ProyectoLHD)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=alu0101221960_ProyectoLHD&metric=bugs)](https://sonarcloud.io/summary/new_code?id=alu0101221960_ProyectoLHD)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=alu0101221960_ProyectoLHD&metric=coverage)](https://sonarcloud.io/summary/new_code?id=alu0101221960_ProyectoLHD)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=alu0101221960_ProyectoLHD&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=alu0101221960_ProyectoLHD)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=alu0101221960_ProyectoLHD&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=alu0101221960_ProyectoLHD)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=alu0101221960_ProyectoLHD&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=alu0101221960_ProyectoLHD)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=alu0101221960_ProyectoLHD&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=alu0101221960_ProyectoLHD)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=alu0101221960_ProyectoLHD&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=alu0101221960_ProyectoLHD)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=alu0101221960_ProyectoLHD&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=alu0101221960_ProyectoLHD)
+
+
+
 
 [![CircleCI](https://circleci.com/gh/alu0101221960/ProyectoLHD/tree/main.svg?style=svg)](https://circleci.com/gh/alu0101221960/ProyectoLHD/tree/main)
