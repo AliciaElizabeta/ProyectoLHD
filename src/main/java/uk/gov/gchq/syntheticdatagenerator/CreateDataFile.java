@@ -108,13 +108,13 @@ public final class CreateDataFile implements Callable<Boolean> {
                 AvroSerialiser<Teacher> teacherAvroSerialiser = new AvroSerialiser<>(Teacher.class);
 
                 // Need at least one Employee
-                Teacher firstEmployee = Teacher.generate(random);
-                Manager[] managers = firstEmployee.getManager();
+                Teacher firstTeacher = Teacher.generate(random);
+                Manager[] managers = firstTeacher.getManager();
                 managers[0].setUid("Bob");
-                firstEmployee.setManager(managers);
+                firstTeacher.setManager(managers);
 
-                // Create more employees if needed
-                Stream<Teacher> teacherStream = Stream.of(firstEmployee);
+                // Create more teachers if needed
+                Stream<Teacher> teacherStream = Stream.of(firstTeacher);
                 if (numberOfEmployees > 1) {
                     if(isCSVFile == false){
                         teacherStream = Stream.concat(teacherStream, generateStreamOfTeacher());
@@ -129,15 +129,13 @@ public final class CreateDataFile implements Callable<Boolean> {
                 // Serialise stream to output
                 teacherAvroSerialiser.serialise(teacherStream, out);
                 return true;
-
             }
             
             
         } catch (IOException ex) {
-            LOGGER.error("IOException when serialising Employee to Avro", ex);
+            LOGGER.error("IOException when serialising Employee or Teacher to Avro", ex);
             return false;
         }
-
         return false;
     }
 
@@ -159,11 +157,11 @@ public final class CreateDataFile implements Callable<Boolean> {
     }
 
     /**
-     * @brief This method creates a stream of employees
+     * @brief This method creates a stream of teachers
      * @return the list of generated teacher data
      */
     private Stream<Teacher> generateStreamOfTeacher() {
-        LOGGER.info("Generating {} employees", numberOfEmployees);
+        LOGGER.info("Generating {} teachers", numberOfEmployees);
         final AtomicLong counter = new AtomicLong(0);
         Stream<Teacher> teacherStream = Stream.generate(() -> {
             if (counter.incrementAndGet() % PRINT_EVERY == 0) {
