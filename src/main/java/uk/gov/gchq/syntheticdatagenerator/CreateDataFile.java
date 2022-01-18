@@ -36,6 +36,11 @@ import java.util.stream.Stream;
 
 import com.google.common.io.Files;
 
+/**
+ * @brief This class creates a data file
+ * @details the output can be selected among and "avro" or "csv" file
+ * @details to create the output file 6 different arguments need to be inserted
+ */
 public final class CreateDataFile implements Callable<Boolean> {
     private static final Logger LOGGER = LoggerFactory.getLogger(CreateDataFile.class);
     // When a large number of employees are requested, print the progress as feedback that the process has not frozen
@@ -47,14 +52,25 @@ public final class CreateDataFile implements Callable<Boolean> {
     private final String ocupation;
     private boolean isCSVFile = false;
 
-    public CreateDataFile(final long numberOfEmployees, final int seed, final File outputFile, final String ocupation) {
-        this.numberOfEmployees = numberOfEmployees;
+    /**
+     * @brief This method creates a data file
+     * @param numberOfPeople number of people that want to be created
+     * @param seed seed to create the data file
+     * @param outputFile output file
+     * @param ocupation type of person that is going to be created: the selection will be among employees or teachers
+     */
+    public CreateDataFile(final long numberOfPeople, final int seed, final File outputFile, final String ocupation) {
+        this.numberOfEmployees = numberOfPeople;
         this.random = new SecureRandom(longToBytes(seed));
         this.outputFile = outputFile;
         this.ocupation = ocupation;
         if(getExtensionByGuava(outputFile).equals("csv")){isCSVFile = true;}
     }
 
+    /**
+     * @brief This method creates the output file and random data
+     * @return if the operation was successfully completed or not
+     */
     public Boolean call() {
         if (!outputFile.getParentFile().exists()) {
             boolean mkdirSuccess = outputFile.getParentFile().mkdirs();
@@ -126,6 +142,10 @@ public final class CreateDataFile implements Callable<Boolean> {
         return false;
     }
 
+    /**
+     * @brief This method creates a stream of employees
+     * @return the list of generated employee data
+     */
     private Stream<Employee> generateStreamOfEmployees() {
         LOGGER.info("Generating {} employees", numberOfEmployees);
         final AtomicLong counter = new AtomicLong(0);
@@ -139,6 +159,10 @@ public final class CreateDataFile implements Callable<Boolean> {
         return employeeStream.limit(numberOfEmployees - 1);
     }
 
+    /**
+     * @brief This method creates a stream of employees
+     * @return the list of generated teacher data
+     */
     private Stream<Teacher> generateStreamOfTeacher() {
         LOGGER.info("Generating {} employees", numberOfEmployees);
         final AtomicLong counter = new AtomicLong(0);
@@ -153,12 +177,22 @@ public final class CreateDataFile implements Callable<Boolean> {
     }
 
 
+    /**
+     * @brief This method converts a long value to a byte value
+     * @param x long value
+     * @return long value in bytes
+     */
     private byte[] longToBytes(long x) {
         ByteBuffer buffer = ByteBuffer.allocate(Long.BYTES);
         buffer.putLong(x);
         return buffer.array();
     }
 
+    /**
+     * @brief This method obtains the file extension
+     * @param filename file name
+     * @return file extension
+     */
     public String getExtensionByGuava(File filename) {
         String f = filename.getName();
         return Files.getFileExtension(f);
