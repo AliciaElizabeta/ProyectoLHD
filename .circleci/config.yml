@@ -28,5 +28,4 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-      - build:
-          context: sonarcloud
+      - build
