@@ -44,10 +44,10 @@ public final class CreateDataFile implements Callable<Boolean> {
     private final long numberOfEmployees;
     private final SecureRandom random;
     private final File outputFile;
-    private final String ocupation;
+    private final char ocupation;
     private boolean isCSVFile = false;
 
-    public CreateDataFile(final long numberOfEmployees, final int seed, final File outputFile, final String ocupation) {
+    public CreateDataFile(final long numberOfEmployees, final int seed, final File outputFile, final char ocupation) {
         this.numberOfEmployees = numberOfEmployees;
         this.random = new SecureRandom(longToBytes(seed));
         this.outputFile = outputFile;
