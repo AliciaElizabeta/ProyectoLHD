@@ -23,8 +23,14 @@ import uk.gov.gchq.syntheticdatagenerator.types.Employee;
 import java.io.File;
 import java.util.Random;
 
+/**
+ * @brief Employee test
+ */
 public class EmployeeTest {
 
+    /**
+     * @brief This test evaluates whether the employee data is correctly generated
+     */
     @Test
     public void generateEmployee() {
         long startTime = System.currentTimeMillis();
@@ -36,6 +42,9 @@ public class EmployeeTest {
         System.out.println("Took " + (endTime - startTime) + "ms to create 100 employees");
     }
 
+    /**
+     * This test evaluates whether the data is correctly generated
+     */
     @Test
     public void generateData() {
         try {

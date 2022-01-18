@@ -23,8 +23,14 @@ import uk.gov.gchq.syntheticdatagenerator.types.Teacher;
 import java.io.File;
 import java.util.Random;
 
+/**
+ * @brief Teacher Test
+ */
 public class TeacherTest {
 
+    /**
+     * @brief This test evaluates whether the teacher data is correctly generated
+     */
     @Test
     public void generateTeacher() {
         long startTime = System.currentTimeMillis();
@@ -36,6 +42,9 @@ public class TeacherTest {
         System.out.println("Took " + (endTime - startTime) + "ms to create 100 teachers");
     }
 
+    /**
+     * This test evaluates whether the data is correctly generated
+     */
     @Test
     public void generateData() {
         try {
