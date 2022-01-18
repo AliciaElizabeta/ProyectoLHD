@@ -35,7 +35,7 @@ import java.util.concurrent.ThreadFactory;
 public final class CreateData {
     private static final Logger LOGGER = LoggerFactory.getLogger(CreateData.class);
     // Varargs indices
-    private static final int MINIMUM_ARGS = 3;
+    private static final int MINIMUM_ARGS = 5;
     private static final int OUT_PATH_ARG = 0;
     private static final int NUM_EMPLOYEES_ARG = 1;
     private static final int NUM_FILES_ARG = 2;
