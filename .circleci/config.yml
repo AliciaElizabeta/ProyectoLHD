@@ -15,4 +15,5 @@ workflows:
   main:
     jobs:
       - build:
-          context: sonar cloud
+          context: Publishing Orb
+          orb-ref: sonarsource/sonarcloud@1.0.3
