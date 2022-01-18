@@ -49,7 +49,7 @@ class Employee {
 
 The `Teacher` object contains the following fields:
 ```
-class Teacher {
+class Teacher{
     UserId uid;
     String name;
     String dateOfBirth;
