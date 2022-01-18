@@ -122,6 +122,8 @@ public final class CreateDataFile implements Callable<Boolean> {
             LOGGER.error("IOException when serialising Employee to Avro", ex);
             return false;
         }
+
+        return false;
     }
 
     private Stream<Employee> generateStreamOfEmployees() {
