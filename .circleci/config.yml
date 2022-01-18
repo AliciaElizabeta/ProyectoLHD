@@ -2,8 +2,8 @@
 # See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 
-orbs: 
-  sonarcloud: sonarsource/sonarcloud@1.0.3
+#orbs: 
+  #sonarcloud: sonarsource/sonarcloud@1.0.3
 
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
@@ -17,7 +17,7 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
-      - sonarcloud/scan
+      # sonarcloud/scan
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
