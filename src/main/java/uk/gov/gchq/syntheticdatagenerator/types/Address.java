@@ -37,10 +37,9 @@ public class Address implements Serializable {
     /**
      * @brief This method generates addresses
      * @param faker fake data values
-     * @param random random value
      * @return generated addresses
      */
-    public static Address generate(final Faker faker, final Random random) {
+    public static Address generate(final Faker faker) {
         Address address = new Address();
         com.github.javafaker.Address fakeAddress = faker.address();
         address.setStreetAddressNumber(fakeAddress.streetAddressNumber());

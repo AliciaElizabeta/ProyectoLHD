@@ -67,7 +67,7 @@ public class Teacher implements Serializable {
         teacher.setDateOfBirth(DateHelper.generateDateOfBirth(random));
         teacher.setContactNumbers(PhoneNumber.generateMany(random));
         teacher.setEmergencyContacts(EmergencyContact.generateMany(faker, random));
-        teacher.setAddress(Address.generate(faker, random));
+        teacher.setAddress(Address.generate(faker));
         teacher.setNationality(Nationality.generate(random));
         teacher.setSubject(Subject.generate(random));
         teacher.setDepartment(Department.generate(random));

@@ -71,7 +71,7 @@ public class Employee implements Serializable {
         employee.setDateOfBirth(DateHelper.generateDateOfBirth(random));
         employee.setContactNumbers(PhoneNumber.generateMany(random));
         employee.setEmergencyContacts(EmergencyContact.generateMany(faker, random));
-        employee.setAddress(Address.generate(faker, random));
+        employee.setAddress(Address.generate(faker));
         employee.setBankDetails(BankDetails.generate(random));
         employee.setTaxCode(generateTaxCode());
         employee.setNationality(Nationality.generate(random));
