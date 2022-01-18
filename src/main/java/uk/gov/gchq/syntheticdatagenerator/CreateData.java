@@ -27,6 +27,11 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.ThreadFactory;
 
+/**
+ * @class Create Data
+ * @brief This class generates new data
+ *
+ */
 public final class CreateData {
     private static final Logger LOGGER = LoggerFactory.getLogger(CreateData.class);
     // Varargs indices
@@ -41,6 +46,10 @@ public final class CreateData {
     private CreateData() {
     }
 
+    /**
+     * @brief This method is able to generate new data based on the number of arguments as input
+     * @param args arguments given as input
+     */
     public static void main(final String... args) {
         if (args.length < MINIMUM_ARGS) {
             LOGGER.warn("This method needs at least three arguments. The directory path to save the files in, the number of employee's to generate and the number of files to split those employees between. An optional 4th argument is the number of threads to use which will default to 1.");
