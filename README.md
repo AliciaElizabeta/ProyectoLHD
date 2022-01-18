@@ -105,3 +105,5 @@ It is possible to print the generated data in a *csv* format
 
 
 [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=alu0101221960_ProyectoLHD)
+
+[![CircleCI](https://circleci.com/gh/ull/proyectolhd.svg?style=svg)](https://github.com/alu0101221960/ProyectoLHD)
