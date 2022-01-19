@@ -1,7 +1,14 @@
 version: 2.1
 orbs:
   maven: circleci/maven@1.0
+  
+jobs:
+  build:
+  - store_test_results:
+      path: test-results
+      
 workflows:
   maven_test:
     jobs:
+      - build
       - maven/test
