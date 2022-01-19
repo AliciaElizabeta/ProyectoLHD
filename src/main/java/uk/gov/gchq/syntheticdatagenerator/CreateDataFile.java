@@ -62,7 +62,7 @@ public final class CreateDataFile implements Callable<Boolean> {
         this.numberOfPeople = numberOfPeople;
         this.random = new SecureRandom(longToBytes(seed));
         this.outputFile = outputFile;
-        this.ocupation = ocupation;
+        this.ocupation = ocupation.toUpperCase();
         if(getExtensionByGuava(outputFile).equals("csv")){isCSVFile = true;}
         else{isCSVFile = false;}
     }
@@ -111,7 +111,7 @@ public final class CreateDataFile implements Callable<Boolean> {
                 // Need at least one Employee
                 Teacher firstTeacher = Teacher.generate(random);
                 Manager[] managers = firstTeacher.getManager();
-                managers[0].setUid("Bob");
+                managers[0].setUid("Peter");
                 firstTeacher.setManager(managers);
 
                 // Create more teachers if needed

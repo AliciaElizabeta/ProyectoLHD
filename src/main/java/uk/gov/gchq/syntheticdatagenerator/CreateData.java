@@ -67,7 +67,7 @@ public final class CreateData {
                 numberOfThreads = Integer.parseInt(args[NUM_THREADS_ARG]);
                 //1 para ejecucion sin csv y 0 para ejecucion modo csv
                 csvFileExecution = Integer.parseInt(args[IS_CSV_OUT]);
-                job = args[OCUPATION].toString();
+                job = args[OCUPATION];
             }
             long startTime = System.currentTimeMillis();
             ExecutorService executors = Executors.newFixedThreadPool(numberOfThreads, createDaemonThreadFactory());
@@ -76,10 +76,10 @@ public final class CreateData {
         
             for (int i = 0; i < numberOfFiles; i++) {
                 if(args[IS_CSV_OUT].equals("1")){
-                    tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/" + args[IS_CSV_OUT] + OCUPATION + i + ".csv"), job);
+                    tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/worker_" + job + i + ".csv"), job);
                 }
                 else{
-                    tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/" + args[IS_CSV_OUT] + OCUPATION + i + ".avro" ), job);
+                    tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/worker_" + job + i + ".avro" ), job);
                 }
             }
             try {
