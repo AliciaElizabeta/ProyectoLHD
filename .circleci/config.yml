@@ -5,7 +5,6 @@ orbs:
 workflows:
   maven_test:
     jobs:
-      - build
       - maven/test
       - store_test_results:
          path: test-results
