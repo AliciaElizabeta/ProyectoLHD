@@ -136,7 +136,7 @@ It does not affect the correct execution of the command if the TYPE generated is
 
 ## Authors
 
-Alicia Marrero Ravelo - alu0101221960@ull.edu.es
+Alicia Elizabeta Marrero Ravelo - alu0101221960@ull.edu.es
 
 Laura González González - alu0101203942@ull.edu.es
 
