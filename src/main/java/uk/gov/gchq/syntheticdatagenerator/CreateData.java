@@ -35,13 +35,13 @@ import java.util.concurrent.ThreadFactory;
 public final class CreateData {
     private static final Logger LOGGER = LoggerFactory.getLogger(CreateData.class);
     // Varargs indices
-    private static final int MINIMUM_ARGS = 3;
+    private static final int MINIMUM_ARGS = 5;
     private static final int OUT_PATH_ARG = 0;
     private static final int NUM_EMPLOYEES_ARG = 1;
     private static final int NUM_FILES_ARG = 2;
     private static final int NUM_THREADS_ARG = 3;
-    private static final int IS_CSV_OUT = 1;
-    private static final String OCUPATION = "E";
+    private static final int IS_CSV_OUT = 4;
+    private static final int OCUPATION = 5;
 
     private CreateData() {
     }
@@ -67,7 +67,7 @@ public final class CreateData {
                 numberOfThreads = Integer.parseInt(args[NUM_THREADS_ARG]);
                 //1 para ejecucion sin csv y 0 para ejecucion modo csv
                 csvFileExecution = Integer.parseInt(args[IS_CSV_OUT]);
-                job = OCUPATION;
+                job = args[OCUPATION].toString();
             }
             long startTime = System.currentTimeMillis();
             ExecutorService executors = Executors.newFixedThreadPool(numberOfThreads, createDaemonThreadFactory());
@@ -75,11 +75,11 @@ public final class CreateData {
             long employeesPerFile = numberOfEmployees / numberOfFiles;
         
             for (int i = 0; i < numberOfFiles; i++) {
-                if(args[IS_CSV_OUT] == "1"){
-                    tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/employee_file" + i + ".csv"), job);
+                if(args[IS_CSV_OUT].equals("1")){
+                    tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/" + args[IS_CSV_OUT] + OCUPATION + i + ".csv"), job);
                 }
                 else{
-                    tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/employee_file" + i + ".avro" ), job);
+                    tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/" + args[IS_CSV_OUT] + OCUPATION + i + ".avro" ), job);
                 }
             }
             try {
