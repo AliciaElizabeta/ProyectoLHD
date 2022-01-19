@@ -64,6 +64,7 @@ public final class CreateDataFile implements Callable<Boolean> {
         this.outputFile = outputFile;
         this.ocupation = ocupation;
         if(getExtensionByGuava(outputFile).equals("csv")){isCSVFile = true;}
+        else{isCSVFile = false;}
     }
 
     /**

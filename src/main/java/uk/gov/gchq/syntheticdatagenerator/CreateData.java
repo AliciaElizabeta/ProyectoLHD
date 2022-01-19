@@ -35,7 +35,7 @@ import java.util.concurrent.ThreadFactory;
 public final class CreateData {
     private static final Logger LOGGER = LoggerFactory.getLogger(CreateData.class);
     // Varargs indices
-    private static final int MINIMUM_ARGS = 5;
+    private static final int MINIMUM_ARGS = 3;
     private static final int OUT_PATH_ARG = 0;
     private static final int NUM_EMPLOYEES_ARG = 1;
     private static final int NUM_FILES_ARG = 2;
@@ -61,23 +61,25 @@ public final class CreateData {
             // Default values
             int numberOfThreads = numberOfFiles;
             // Optional additional arguments overriding default values
-            int csvFileExecution = 1;
-            String job = OCUPATION;
+            int csvFileExecution;
+            String job = null;
             if (args.length > MINIMUM_ARGS) {
                 numberOfThreads = Integer.parseInt(args[NUM_THREADS_ARG]);
                 //1 para ejecucion sin csv y 0 para ejecucion modo csv
                 csvFileExecution = Integer.parseInt(args[IS_CSV_OUT]);
+                job = OCUPATION;
             }
             long startTime = System.currentTimeMillis();
             ExecutorService executors = Executors.newFixedThreadPool(numberOfThreads, createDaemonThreadFactory());
             CreateDataFile[] tasks = new CreateDataFile[numberOfFiles];
             long employeesPerFile = numberOfEmployees / numberOfFiles;
+        
             for (int i = 0; i < numberOfFiles; i++) {
-                if(csvFileExecution == 1){
-                    tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/employee_file" + i + ".avro" ), job);
-                }
-                else if(csvFileExecution != 1){
+                if(args[IS_CSV_OUT] == "1"){
                     tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/employee_file" + i + ".csv"), job);
+                }
+                else{
+                    tasks[i] = new CreateDataFile(employeesPerFile, i, new File(outputFilePath + "/employee_file" + i + ".avro" ), job);
                 }
             }
             try {
