@@ -45,7 +45,7 @@ public final class CreateDataFile implements Callable<Boolean> {
     // When a large number of employees are requested, print the progress as feedback that the process has not frozen
     private static final long PRINT_EVERY = 100_000L;
 
-    private final long numberOfEmployees;
+    private final long numberOfPeople;
     private final SecureRandom random;
     private final File outputFile;
     private final String ocupation;
@@ -59,7 +59,7 @@ public final class CreateDataFile implements Callable<Boolean> {
      * @param ocupation type of person that is going to be created: the selection will be among employees or teachers
      */
     public CreateDataFile(final long numberOfPeople, final int seed, final File outputFile, final String ocupation) {
-        this.numberOfEmployees = numberOfPeople;
+        this.numberOfPeople = numberOfPeople;
         this.random = new SecureRandom(longToBytes(seed));
         this.outputFile = outputFile;
         this.ocupation = ocupation;
@@ -89,7 +89,7 @@ public final class CreateDataFile implements Callable<Boolean> {
 
                 // Create more employees if needed
                 Stream<Employee> employeeStream = Stream.of(firstEmployee);
-                if (numberOfEmployees > 1) {
+                if (numberOfPeople > 1) {
                     if(isCSVFile == false){
                         employeeStream = Stream.concat(employeeStream, generateStreamOfEmployees());
                     }
@@ -115,7 +115,7 @@ public final class CreateDataFile implements Callable<Boolean> {
 
                 // Create more teachers if needed
                 Stream<Teacher> teacherStream = Stream.of(firstTeacher);
-                if (numberOfEmployees > 1) {
+                if (numberOfPeople > 1) {
                     if(isCSVFile == false){
                         teacherStream = Stream.concat(teacherStream, generateStreamOfTeacher());
                     }
@@ -144,16 +144,16 @@ public final class CreateDataFile implements Callable<Boolean> {
      * @return the list of generated employee data
      */
     private Stream<Employee> generateStreamOfEmployees() {
-        LOGGER.info("Generating {} employees", numberOfEmployees);
+        LOGGER.info("Generating {} employees", numberOfPeople);
         final AtomicLong counter = new AtomicLong(0);
         Stream<Employee> employeeStream = Stream.generate(() -> {
             if (counter.incrementAndGet() % PRINT_EVERY == 0) {
-                LOGGER.info("Processing {} of {}", counter.get(), numberOfEmployees);
+                LOGGER.info("Processing {} of {}", counter.get(), numberOfPeople);
             }
             return Employee.generate(random);
         });
         // Excluding the one employee we had to generate above
-        return employeeStream.limit(numberOfEmployees - 1);
+        return employeeStream.limit(numberOfPeople - 1);
     }
 
     /**
@@ -161,16 +161,16 @@ public final class CreateDataFile implements Callable<Boolean> {
      * @return the list of generated teacher data
      */
     private Stream<Teacher> generateStreamOfTeacher() {
-        LOGGER.info("Generating {} teachers", numberOfEmployees);
+        LOGGER.info("Generating {} teachers", numberOfPeople);
         final AtomicLong counter = new AtomicLong(0);
         Stream<Teacher> teacherStream = Stream.generate(() -> {
             if (counter.incrementAndGet() % PRINT_EVERY == 0) {
-                LOGGER.info("Processing {} of {}", counter.get(), numberOfEmployees);
+                LOGGER.info("Processing {} of {}", counter.get(), numberOfPeople);
             }
             return Teacher.generate(random);
         });
         // Excluding the one employee we had to generate above
-        return teacherStream.limit(numberOfEmployees - 1);
+        return teacherStream.limit(numberOfPeople - 1);
     }
 
 

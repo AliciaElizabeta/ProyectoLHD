@@ -138,6 +138,7 @@ Laura Manzini - alu0101531700@ull.edu.es
 
 
 [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=alu0101221960_ProyectoLHD)
+
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=alu0101221960_ProyectoLHD&metric=bugs)](https://sonarcloud.io/summary/new_code?id=alu0101221960_ProyectoLHD)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=alu0101221960_ProyectoLHD&metric=coverage)](https://sonarcloud.io/summary/new_code?id=alu0101221960_ProyectoLHD)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=alu0101221960_ProyectoLHD&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=alu0101221960_ProyectoLHD)
