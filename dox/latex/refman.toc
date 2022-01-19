@@ -1,0 +1,571 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Namespace Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Packages}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Namespace Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Package uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator}{9}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{9}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Package uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}serialise}{9}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{9}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}Package uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types}{10}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{10}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Package uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}utils}{10}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{10}{subsection.5.4.1}%
+\contentsline {chapter}{\numberline {6}Class Documentation}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Address Class Reference}{11}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{12}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Member Function Documentation}{12}{subsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}generate()}{12}{subsubsection.6.1.2.1}%
+\contentsline {subsubsection}{\numberline {6.1.2.2}getCity()}{12}{subsubsection.6.1.2.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.3}getState()}{13}{subsubsection.6.1.2.3}%
+\contentsline {subsubsection}{\numberline {6.1.2.4}getStreetAddressNumber()}{13}{subsubsection.6.1.2.4}%
+\contentsline {subsubsection}{\numberline {6.1.2.5}getStreetName()}{13}{subsubsection.6.1.2.5}%
+\contentsline {subsubsection}{\numberline {6.1.2.6}getZipCode()}{13}{subsubsection.6.1.2.6}%
+\contentsline {subsubsection}{\numberline {6.1.2.7}setCity()}{13}{subsubsection.6.1.2.7}%
+\contentsline {subsubsection}{\numberline {6.1.2.8}setState()}{14}{subsubsection.6.1.2.8}%
+\contentsline {subsubsection}{\numberline {6.1.2.9}setStreetAddressNumber()}{14}{subsubsection.6.1.2.9}%
+\contentsline {subsubsection}{\numberline {6.1.2.10}setStreetName()}{14}{subsubsection.6.1.2.10}%
+\contentsline {subsubsection}{\numberline {6.1.2.11}setZipCode()}{15}{subsubsection.6.1.2.11}%
+\contentsline {subsubsection}{\numberline {6.1.2.12}toString()}{15}{subsubsection.6.1.2.12}%
+\contentsline {section}{\numberline {6.2}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}serialise.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Avro\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Serialiser$<$ O $>$ Class Template Reference}{15}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{16}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Constructor \& Destructor Documentation}{17}{subsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}AvroSerialiser()}{17}{subsubsection.6.2.2.1}%
+\contentsline {subsection}{\numberline {6.2.3}Member Function Documentation}{17}{subsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.3.1}deserialise()}{17}{subsubsection.6.2.3.1}%
+\contentsline {subsubsection}{\numberline {6.2.3.2}getDomainClass()}{18}{subsubsection.6.2.3.2}%
+\contentsline {subsubsection}{\numberline {6.2.3.3}serialise()}{18}{subsubsection.6.2.3.3}%
+\contentsline {section}{\numberline {6.3}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bank\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Details Class Reference}{18}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Member Function Documentation}{19}{subsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.1}generate()}{19}{subsubsection.6.3.1.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.2}getAccountNumber()}{19}{subsubsection.6.3.1.2}%
+\contentsline {subsubsection}{\numberline {6.3.1.3}getSortCode()}{20}{subsubsection.6.3.1.3}%
+\contentsline {subsubsection}{\numberline {6.3.1.4}setAccountNumber()}{20}{subsubsection.6.3.1.4}%
+\contentsline {subsubsection}{\numberline {6.3.1.5}setSortCode()}{20}{subsubsection.6.3.1.5}%
+\contentsline {subsubsection}{\numberline {6.3.1.6}toString()}{20}{subsubsection.6.3.1.6}%
+\contentsline {section}{\numberline {6.4}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Create\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data Class Reference}{21}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Member Function Documentation}{21}{subsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.1.1}createDaemonThreadFactory()}{21}{subsubsection.6.4.1.1}%
+\contentsline {subsubsection}{\numberline {6.4.1.2}main()}{21}{subsubsection.6.4.1.2}%
+\contentsline {section}{\numberline {6.5}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Create\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File Class Reference}{21}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Detailed Description}{22}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Constructor \& Destructor Documentation}{22}{subsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.1}CreateDataFile()}{22}{subsubsection.6.5.2.1}%
+\contentsline {subsection}{\numberline {6.5.3}Member Function Documentation}{23}{subsection.6.5.3}%
+\contentsline {subsubsection}{\numberline {6.5.3.1}call()}{23}{subsubsection.6.5.3.1}%
+\contentsline {subsubsection}{\numberline {6.5.3.2}getExtensionByGuava()}{23}{subsubsection.6.5.3.2}%
+\contentsline {section}{\numberline {6.6}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}utils.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Date\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Helper Class Reference}{23}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Member Function Documentation}{23}{subsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.1.1}generateDateOfBirth()}{24}{subsubsection.6.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.6.1.2}generateHireDate()}{24}{subsubsection.6.6.1.2}%
+\contentsline {section}{\numberline {6.7}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Department Enum Reference}{24}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Member Function Documentation}{24}{subsection.6.7.1}%
+\contentsline {subsubsection}{\numberline {6.7.1.1}generate()}{24}{subsubsection.6.7.1.1}%
+\contentsline {subsection}{\numberline {6.7.2}Member Data Documentation}{25}{subsection.6.7.2}%
+\contentsline {subsubsection}{\numberline {6.7.2.1}BUSINESS}{25}{subsubsection.6.7.2.1}%
+\contentsline {subsubsection}{\numberline {6.7.2.2}COMMUNICATION}{25}{subsubsection.6.7.2.2}%
+\contentsline {subsubsection}{\numberline {6.7.2.3}ECONOMICS}{25}{subsubsection.6.7.2.3}%
+\contentsline {subsubsection}{\numberline {6.7.2.4}EDUCATION}{25}{subsubsection.6.7.2.4}%
+\contentsline {subsubsection}{\numberline {6.7.2.5}HEALTH\_SCIENCES}{25}{subsubsection.6.7.2.5}%
+\contentsline {subsubsection}{\numberline {6.7.2.6}HIGHER\_POLYTECHNIC\_SCHOOL\_OF\_ENGINEERING}{26}{subsubsection.6.7.2.6}%
+\contentsline {subsubsection}{\numberline {6.7.2.7}HIGHER\_POLYTECHNIC\_SCHOOL\_OF\_ENGINEERING\_AND\_TECHNOLOGY}{26}{subsubsection.6.7.2.7}%
+\contentsline {subsubsection}{\numberline {6.7.2.8}HUMANITIES}{26}{subsubsection.6.7.2.8}%
+\contentsline {subsubsection}{\numberline {6.7.2.9}LAW}{26}{subsubsection.6.7.2.9}%
+\contentsline {subsubsection}{\numberline {6.7.2.10}POLITICAL\_SCIENCES}{26}{subsubsection.6.7.2.10}%
+\contentsline {subsubsection}{\numberline {6.7.2.11}SCHOOL\_DOCTORAL\_AND\_GRADUATES\_STUDIES}{26}{subsubsection.6.7.2.11}%
+\contentsline {subsubsection}{\numberline {6.7.2.12}SCIENCES}{26}{subsubsection.6.7.2.12}%
+\contentsline {subsubsection}{\numberline {6.7.2.13}SOCIAL\_SCIENCES}{27}{subsubsection.6.7.2.13}%
+\contentsline {subsubsection}{\numberline {6.7.2.14}TOURISM}{27}{subsubsection.6.7.2.14}%
+\contentsline {section}{\numberline {6.8}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Emergency\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Contact Class Reference}{27}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Member Function Documentation}{28}{subsection.6.8.1}%
+\contentsline {subsubsection}{\numberline {6.8.1.1}generate()}{28}{subsubsection.6.8.1.1}%
+\contentsline {subsubsection}{\numberline {6.8.1.2}generateMany()}{28}{subsubsection.6.8.1.2}%
+\contentsline {subsubsection}{\numberline {6.8.1.3}getContactName()}{28}{subsubsection.6.8.1.3}%
+\contentsline {subsubsection}{\numberline {6.8.1.4}getContactNumbers()}{29}{subsubsection.6.8.1.4}%
+\contentsline {subsubsection}{\numberline {6.8.1.5}getRelation()}{29}{subsubsection.6.8.1.5}%
+\contentsline {subsubsection}{\numberline {6.8.1.6}setContactName()}{29}{subsubsection.6.8.1.6}%
+\contentsline {subsubsection}{\numberline {6.8.1.7}setContactNumbers()}{29}{subsubsection.6.8.1.7}%
+\contentsline {subsubsection}{\numberline {6.8.1.8}setRelation()}{30}{subsubsection.6.8.1.8}%
+\contentsline {subsubsection}{\numberline {6.8.1.9}toString()}{30}{subsubsection.6.8.1.9}%
+\contentsline {section}{\numberline {6.9}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Employee Class Reference}{30}{section.6.9}%
+\contentsline {subsection}{\numberline {6.9.1}Detailed Description}{32}{subsection.6.9.1}%
+\contentsline {subsection}{\numberline {6.9.2}Member Function Documentation}{32}{subsection.6.9.2}%
+\contentsline {subsubsection}{\numberline {6.9.2.1}generate()}{32}{subsubsection.6.9.2.1}%
+\contentsline {subsubsection}{\numberline {6.9.2.2}generateUID()}{32}{subsubsection.6.9.2.2}%
+\contentsline {subsubsection}{\numberline {6.9.2.3}getAddress()}{33}{subsubsection.6.9.2.3}%
+\contentsline {subsubsection}{\numberline {6.9.2.4}getBankDetails()}{33}{subsubsection.6.9.2.4}%
+\contentsline {subsubsection}{\numberline {6.9.2.5}getContactNumbers()}{33}{subsubsection.6.9.2.5}%
+\contentsline {subsubsection}{\numberline {6.9.2.6}getDateOfBirth()}{34}{subsubsection.6.9.2.6}%
+\contentsline {subsubsection}{\numberline {6.9.2.7}getDepartment()}{34}{subsubsection.6.9.2.7}%
+\contentsline {subsubsection}{\numberline {6.9.2.8}getEmergencyContacts()}{34}{subsubsection.6.9.2.8}%
+\contentsline {subsubsection}{\numberline {6.9.2.9}getGrade()}{34}{subsubsection.6.9.2.9}%
+\contentsline {subsubsection}{\numberline {6.9.2.10}getHireDate()}{35}{subsubsection.6.9.2.10}%
+\contentsline {subsubsection}{\numberline {6.9.2.11}getManager()}{35}{subsubsection.6.9.2.11}%
+\contentsline {subsubsection}{\numberline {6.9.2.12}getName()}{35}{subsubsection.6.9.2.12}%
+\contentsline {subsubsection}{\numberline {6.9.2.13}getNationality()}{35}{subsubsection.6.9.2.13}%
+\contentsline {subsubsection}{\numberline {6.9.2.14}getSalaryAmount()}{36}{subsubsection.6.9.2.14}%
+\contentsline {subsubsection}{\numberline {6.9.2.15}getSalaryBonus()}{36}{subsubsection.6.9.2.15}%
+\contentsline {subsubsection}{\numberline {6.9.2.16}getSex()}{36}{subsubsection.6.9.2.16}%
+\contentsline {subsubsection}{\numberline {6.9.2.17}getTaxCode()}{36}{subsubsection.6.9.2.17}%
+\contentsline {subsubsection}{\numberline {6.9.2.18}getUid()}{37}{subsubsection.6.9.2.18}%
+\contentsline {subsubsection}{\numberline {6.9.2.19}getWorkLocation()}{37}{subsubsection.6.9.2.19}%
+\contentsline {subsubsection}{\numberline {6.9.2.20}setAddress()}{37}{subsubsection.6.9.2.20}%
+\contentsline {subsubsection}{\numberline {6.9.2.21}setBankDetails()}{37}{subsubsection.6.9.2.21}%
+\contentsline {subsubsection}{\numberline {6.9.2.22}setContactNumbers()}{38}{subsubsection.6.9.2.22}%
+\contentsline {subsubsection}{\numberline {6.9.2.23}setDateOfBirth()}{38}{subsubsection.6.9.2.23}%
+\contentsline {subsubsection}{\numberline {6.9.2.24}setDepartment()}{38}{subsubsection.6.9.2.24}%
+\contentsline {subsubsection}{\numberline {6.9.2.25}setEmergencyContacts()}{38}{subsubsection.6.9.2.25}%
+\contentsline {subsubsection}{\numberline {6.9.2.26}setGrade()}{39}{subsubsection.6.9.2.26}%
+\contentsline {subsubsection}{\numberline {6.9.2.27}setHireDate()}{39}{subsubsection.6.9.2.27}%
+\contentsline {subsubsection}{\numberline {6.9.2.28}setManager()}{39}{subsubsection.6.9.2.28}%
+\contentsline {subsubsection}{\numberline {6.9.2.29}setName()}{40}{subsubsection.6.9.2.29}%
+\contentsline {subsubsection}{\numberline {6.9.2.30}setNationality()}{40}{subsubsection.6.9.2.30}%
+\contentsline {subsubsection}{\numberline {6.9.2.31}setSalaryAmount()}{40}{subsubsection.6.9.2.31}%
+\contentsline {subsubsection}{\numberline {6.9.2.32}setSalaryBonus()}{40}{subsubsection.6.9.2.32}%
+\contentsline {subsubsection}{\numberline {6.9.2.33}setSex()}{41}{subsubsection.6.9.2.33}%
+\contentsline {subsubsection}{\numberline {6.9.2.34}setTaxCode()}{41}{subsubsection.6.9.2.34}%
+\contentsline {subsubsection}{\numberline {6.9.2.35}setUid()}{41}{subsubsection.6.9.2.35}%
+\contentsline {subsubsection}{\numberline {6.9.2.36}setWorkLocation()}{42}{subsubsection.6.9.2.36}%
+\contentsline {subsubsection}{\numberline {6.9.2.37}toString()}{42}{subsubsection.6.9.2.37}%
+\contentsline {section}{\numberline {6.10}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Grade Enum Reference}{42}{section.6.10}%
+\contentsline {subsection}{\numberline {6.10.1}Member Function Documentation}{42}{subsection.6.10.1}%
+\contentsline {subsubsection}{\numberline {6.10.1.1}generate()}{42}{subsubsection.6.10.1.1}%
+\contentsline {subsection}{\numberline {6.10.2}Member Data Documentation}{43}{subsection.6.10.2}%
+\contentsline {subsubsection}{\numberline {6.10.2.1}GRADE\_1}{43}{subsubsection.6.10.2.1}%
+\contentsline {subsubsection}{\numberline {6.10.2.2}GRADE\_2}{43}{subsubsection.6.10.2.2}%
+\contentsline {subsubsection}{\numberline {6.10.2.3}GRADE\_3}{43}{subsubsection.6.10.2.3}%
+\contentsline {subsubsection}{\numberline {6.10.2.4}GRADE\_4}{43}{subsubsection.6.10.2.4}%
+\contentsline {subsubsection}{\numberline {6.10.2.5}GRADE\_5}{43}{subsubsection.6.10.2.5}%
+\contentsline {subsubsection}{\numberline {6.10.2.6}GRADE\_6}{44}{subsubsection.6.10.2.6}%
+\contentsline {subsubsection}{\numberline {6.10.2.7}GRADE\_7}{44}{subsubsection.6.10.2.7}%
+\contentsline {subsubsection}{\numberline {6.10.2.8}GRADE\_8}{44}{subsubsection.6.10.2.8}%
+\contentsline {section}{\numberline {6.11}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager Class Reference}{44}{section.6.11}%
+\contentsline {subsection}{\numberline {6.11.1}Detailed Description}{45}{subsection.6.11.1}%
+\contentsline {subsection}{\numberline {6.11.2}Member Function Documentation}{45}{subsection.6.11.2}%
+\contentsline {subsubsection}{\numberline {6.11.2.1}generate()}{45}{subsubsection.6.11.2.1}%
+\contentsline {subsubsection}{\numberline {6.11.2.2}generateMany()}{45}{subsubsection.6.11.2.2}%
+\contentsline {subsubsection}{\numberline {6.11.2.3}generateRecursive()}{46}{subsubsection.6.11.2.3}%
+\contentsline {subsubsection}{\numberline {6.11.2.4}getManager()}{46}{subsubsection.6.11.2.4}%
+\contentsline {subsubsection}{\numberline {6.11.2.5}getManagerType()}{47}{subsubsection.6.11.2.5}%
+\contentsline {subsubsection}{\numberline {6.11.2.6}getUid()}{47}{subsubsection.6.11.2.6}%
+\contentsline {subsubsection}{\numberline {6.11.2.7}setManager()}{47}{subsubsection.6.11.2.7}%
+\contentsline {subsubsection}{\numberline {6.11.2.8}setManagerType()}{47}{subsubsection.6.11.2.8}%
+\contentsline {subsubsection}{\numberline {6.11.2.9}setUid()}{48}{subsubsection.6.11.2.9}%
+\contentsline {subsubsection}{\numberline {6.11.2.10}toString()}{48}{subsubsection.6.11.2.10}%
+\contentsline {section}{\numberline {6.12}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Nationality Enum Reference}{48}{section.6.12}%
+\contentsline {subsection}{\numberline {6.12.1}Member Function Documentation}{53}{subsection.6.12.1}%
+\contentsline {subsubsection}{\numberline {6.12.1.1}generate()}{53}{subsubsection.6.12.1.1}%
+\contentsline {subsection}{\numberline {6.12.2}Member Data Documentation}{53}{subsection.6.12.2}%
+\contentsline {subsubsection}{\numberline {6.12.2.1}AFGHAN}{53}{subsubsection.6.12.2.1}%
+\contentsline {subsubsection}{\numberline {6.12.2.2}ALBANIAN}{53}{subsubsection.6.12.2.2}%
+\contentsline {subsubsection}{\numberline {6.12.2.3}ALGERIAN}{53}{subsubsection.6.12.2.3}%
+\contentsline {subsubsection}{\numberline {6.12.2.4}AMERICAN}{54}{subsubsection.6.12.2.4}%
+\contentsline {subsubsection}{\numberline {6.12.2.5}ANDORRAN}{54}{subsubsection.6.12.2.5}%
+\contentsline {subsubsection}{\numberline {6.12.2.6}ANGOLAN}{54}{subsubsection.6.12.2.6}%
+\contentsline {subsubsection}{\numberline {6.12.2.7}ANGUILLAN}{54}{subsubsection.6.12.2.7}%
+\contentsline {subsubsection}{\numberline {6.12.2.8}ARGENTINE}{54}{subsubsection.6.12.2.8}%
+\contentsline {subsubsection}{\numberline {6.12.2.9}ARMENIAN}{54}{subsubsection.6.12.2.9}%
+\contentsline {subsubsection}{\numberline {6.12.2.10}AUSTRALIAN}{54}{subsubsection.6.12.2.10}%
+\contentsline {subsubsection}{\numberline {6.12.2.11}AUSTRIAN}{54}{subsubsection.6.12.2.11}%
+\contentsline {subsubsection}{\numberline {6.12.2.12}AZERBAIJANI}{55}{subsubsection.6.12.2.12}%
+\contentsline {subsubsection}{\numberline {6.12.2.13}BAHAMIAN}{55}{subsubsection.6.12.2.13}%
+\contentsline {subsubsection}{\numberline {6.12.2.14}BAHRAINI}{55}{subsubsection.6.12.2.14}%
+\contentsline {subsubsection}{\numberline {6.12.2.15}BANGLADESHI}{55}{subsubsection.6.12.2.15}%
+\contentsline {subsubsection}{\numberline {6.12.2.16}BARBADIAN}{55}{subsubsection.6.12.2.16}%
+\contentsline {subsubsection}{\numberline {6.12.2.17}BELARUSIAN}{55}{subsubsection.6.12.2.17}%
+\contentsline {subsubsection}{\numberline {6.12.2.18}BELGIAN}{55}{subsubsection.6.12.2.18}%
+\contentsline {subsubsection}{\numberline {6.12.2.19}BELIZEAN}{55}{subsubsection.6.12.2.19}%
+\contentsline {subsubsection}{\numberline {6.12.2.20}BENINESE}{56}{subsubsection.6.12.2.20}%
+\contentsline {subsubsection}{\numberline {6.12.2.21}BERMUDIAN}{56}{subsubsection.6.12.2.21}%
+\contentsline {subsubsection}{\numberline {6.12.2.22}BHUTANESE}{56}{subsubsection.6.12.2.22}%
+\contentsline {subsubsection}{\numberline {6.12.2.23}BOLIVIAN}{56}{subsubsection.6.12.2.23}%
+\contentsline {subsubsection}{\numberline {6.12.2.24}BOTSWANAN}{56}{subsubsection.6.12.2.24}%
+\contentsline {subsubsection}{\numberline {6.12.2.25}BRAZILIAN}{56}{subsubsection.6.12.2.25}%
+\contentsline {subsubsection}{\numberline {6.12.2.26}BRITISH}{56}{subsubsection.6.12.2.26}%
+\contentsline {subsubsection}{\numberline {6.12.2.27}BRITISH\_VIRGIN\_ISLANDER}{56}{subsubsection.6.12.2.27}%
+\contentsline {subsubsection}{\numberline {6.12.2.28}BRUNEIAN}{57}{subsubsection.6.12.2.28}%
+\contentsline {subsubsection}{\numberline {6.12.2.29}BULGARIAN}{57}{subsubsection.6.12.2.29}%
+\contentsline {subsubsection}{\numberline {6.12.2.30}BURKINAN}{57}{subsubsection.6.12.2.30}%
+\contentsline {subsubsection}{\numberline {6.12.2.31}BURMESE}{57}{subsubsection.6.12.2.31}%
+\contentsline {subsubsection}{\numberline {6.12.2.32}BURUNDIAN}{57}{subsubsection.6.12.2.32}%
+\contentsline {subsubsection}{\numberline {6.12.2.33}CAMBODIAN}{57}{subsubsection.6.12.2.33}%
+\contentsline {subsubsection}{\numberline {6.12.2.34}CAMEROONIAN}{57}{subsubsection.6.12.2.34}%
+\contentsline {subsubsection}{\numberline {6.12.2.35}CANADIAN}{57}{subsubsection.6.12.2.35}%
+\contentsline {subsubsection}{\numberline {6.12.2.36}CAPE\_VERDEAN}{58}{subsubsection.6.12.2.36}%
+\contentsline {subsubsection}{\numberline {6.12.2.37}CAYMAN\_ISLANDER}{58}{subsubsection.6.12.2.37}%
+\contentsline {subsubsection}{\numberline {6.12.2.38}CENTRAL\_AFRICAN}{58}{subsubsection.6.12.2.38}%
+\contentsline {subsubsection}{\numberline {6.12.2.39}CHADIAN}{58}{subsubsection.6.12.2.39}%
+\contentsline {subsubsection}{\numberline {6.12.2.40}CHILEAN}{58}{subsubsection.6.12.2.40}%
+\contentsline {subsubsection}{\numberline {6.12.2.41}CHINESE}{58}{subsubsection.6.12.2.41}%
+\contentsline {subsubsection}{\numberline {6.12.2.42}CITIZEN\_OF\_ANTIGUA\_AND\_BARBUDA}{58}{subsubsection.6.12.2.42}%
+\contentsline {subsubsection}{\numberline {6.12.2.43}CITIZEN\_OF\_BOSNIA\_AND\_HERZEGOVINA}{58}{subsubsection.6.12.2.43}%
+\contentsline {subsubsection}{\numberline {6.12.2.44}CITIZEN\_OF\_GUINEA\_BISSAU}{59}{subsubsection.6.12.2.44}%
+\contentsline {subsubsection}{\numberline {6.12.2.45}CITIZEN\_OF\_KIRIBATI}{59}{subsubsection.6.12.2.45}%
+\contentsline {subsubsection}{\numberline {6.12.2.46}CITIZEN\_OF\_SEYCHELLES}{59}{subsubsection.6.12.2.46}%
+\contentsline {subsubsection}{\numberline {6.12.2.47}CITIZEN\_OF\_THE\_DOMINICAN\_REPUBLIC}{59}{subsubsection.6.12.2.47}%
+\contentsline {subsubsection}{\numberline {6.12.2.48}CITIZEN\_OF\_VANUATU}{59}{subsubsection.6.12.2.48}%
+\contentsline {subsubsection}{\numberline {6.12.2.49}COLOMBIAN}{59}{subsubsection.6.12.2.49}%
+\contentsline {subsubsection}{\numberline {6.12.2.50}COMORAN}{59}{subsubsection.6.12.2.50}%
+\contentsline {subsubsection}{\numberline {6.12.2.51}CONGOLESE}{59}{subsubsection.6.12.2.51}%
+\contentsline {subsubsection}{\numberline {6.12.2.52}COOK\_ISLANDER}{60}{subsubsection.6.12.2.52}%
+\contentsline {subsubsection}{\numberline {6.12.2.53}COSTA\_RICAN}{60}{subsubsection.6.12.2.53}%
+\contentsline {subsubsection}{\numberline {6.12.2.54}CROATIAN}{60}{subsubsection.6.12.2.54}%
+\contentsline {subsubsection}{\numberline {6.12.2.55}CUBAN}{60}{subsubsection.6.12.2.55}%
+\contentsline {subsubsection}{\numberline {6.12.2.56}CYMRAES}{60}{subsubsection.6.12.2.56}%
+\contentsline {subsubsection}{\numberline {6.12.2.57}CYMRO}{60}{subsubsection.6.12.2.57}%
+\contentsline {subsubsection}{\numberline {6.12.2.58}CYPRIOT}{60}{subsubsection.6.12.2.58}%
+\contentsline {subsubsection}{\numberline {6.12.2.59}CZECH}{60}{subsubsection.6.12.2.59}%
+\contentsline {subsubsection}{\numberline {6.12.2.60}DANISH}{61}{subsubsection.6.12.2.60}%
+\contentsline {subsubsection}{\numberline {6.12.2.61}DJIBOUTIAN}{61}{subsubsection.6.12.2.61}%
+\contentsline {subsubsection}{\numberline {6.12.2.62}DOMINICAN}{61}{subsubsection.6.12.2.62}%
+\contentsline {subsubsection}{\numberline {6.12.2.63}DUTCH}{61}{subsubsection.6.12.2.63}%
+\contentsline {subsubsection}{\numberline {6.12.2.64}EAST\_TIMORESE}{61}{subsubsection.6.12.2.64}%
+\contentsline {subsubsection}{\numberline {6.12.2.65}ECUADOREAN}{61}{subsubsection.6.12.2.65}%
+\contentsline {subsubsection}{\numberline {6.12.2.66}EGYPTIAN}{61}{subsubsection.6.12.2.66}%
+\contentsline {subsubsection}{\numberline {6.12.2.67}EMIRATI}{61}{subsubsection.6.12.2.67}%
+\contentsline {subsubsection}{\numberline {6.12.2.68}ENGLISH}{62}{subsubsection.6.12.2.68}%
+\contentsline {subsubsection}{\numberline {6.12.2.69}EQUATORIAL\_GUINEAN}{62}{subsubsection.6.12.2.69}%
+\contentsline {subsubsection}{\numberline {6.12.2.70}ERITREAN}{62}{subsubsection.6.12.2.70}%
+\contentsline {subsubsection}{\numberline {6.12.2.71}ESTONIAN}{62}{subsubsection.6.12.2.71}%
+\contentsline {subsubsection}{\numberline {6.12.2.72}ETHIOPIAN}{62}{subsubsection.6.12.2.72}%
+\contentsline {subsubsection}{\numberline {6.12.2.73}FAROESE}{62}{subsubsection.6.12.2.73}%
+\contentsline {subsubsection}{\numberline {6.12.2.74}FIJIAN}{62}{subsubsection.6.12.2.74}%
+\contentsline {subsubsection}{\numberline {6.12.2.75}FILIPINO}{62}{subsubsection.6.12.2.75}%
+\contentsline {subsubsection}{\numberline {6.12.2.76}FINNISH}{63}{subsubsection.6.12.2.76}%
+\contentsline {subsubsection}{\numberline {6.12.2.77}FRENCH}{63}{subsubsection.6.12.2.77}%
+\contentsline {subsubsection}{\numberline {6.12.2.78}GABONESE}{63}{subsubsection.6.12.2.78}%
+\contentsline {subsubsection}{\numberline {6.12.2.79}GAMBIAN}{63}{subsubsection.6.12.2.79}%
+\contentsline {subsubsection}{\numberline {6.12.2.80}GEORGIAN}{63}{subsubsection.6.12.2.80}%
+\contentsline {subsubsection}{\numberline {6.12.2.81}GERMAN}{63}{subsubsection.6.12.2.81}%
+\contentsline {subsubsection}{\numberline {6.12.2.82}GHANAIAN}{63}{subsubsection.6.12.2.82}%
+\contentsline {subsubsection}{\numberline {6.12.2.83}GIBRALTARIAN}{63}{subsubsection.6.12.2.83}%
+\contentsline {subsubsection}{\numberline {6.12.2.84}GREEK}{64}{subsubsection.6.12.2.84}%
+\contentsline {subsubsection}{\numberline {6.12.2.85}GREENLANDIC}{64}{subsubsection.6.12.2.85}%
+\contentsline {subsubsection}{\numberline {6.12.2.86}GRENADIAN}{64}{subsubsection.6.12.2.86}%
+\contentsline {subsubsection}{\numberline {6.12.2.87}GUAMANIAN}{64}{subsubsection.6.12.2.87}%
+\contentsline {subsubsection}{\numberline {6.12.2.88}GUATEMALAN}{64}{subsubsection.6.12.2.88}%
+\contentsline {subsubsection}{\numberline {6.12.2.89}GUINEAN}{64}{subsubsection.6.12.2.89}%
+\contentsline {subsubsection}{\numberline {6.12.2.90}GUYANESE}{64}{subsubsection.6.12.2.90}%
+\contentsline {subsubsection}{\numberline {6.12.2.91}HAITIAN}{64}{subsubsection.6.12.2.91}%
+\contentsline {subsubsection}{\numberline {6.12.2.92}HONDURAN}{65}{subsubsection.6.12.2.92}%
+\contentsline {subsubsection}{\numberline {6.12.2.93}HONG\_KONGER}{65}{subsubsection.6.12.2.93}%
+\contentsline {subsubsection}{\numberline {6.12.2.94}HUNGARIAN}{65}{subsubsection.6.12.2.94}%
+\contentsline {subsubsection}{\numberline {6.12.2.95}ICELANDIC}{65}{subsubsection.6.12.2.95}%
+\contentsline {subsubsection}{\numberline {6.12.2.96}INDIAN}{65}{subsubsection.6.12.2.96}%
+\contentsline {subsubsection}{\numberline {6.12.2.97}INDONESIAN}{65}{subsubsection.6.12.2.97}%
+\contentsline {subsubsection}{\numberline {6.12.2.98}IRANIAN}{65}{subsubsection.6.12.2.98}%
+\contentsline {subsubsection}{\numberline {6.12.2.99}IRAQI}{65}{subsubsection.6.12.2.99}%
+\contentsline {subsubsection}{\numberline {6.12.2.100}IRISH}{66}{subsubsection.6.12.2.100}%
+\contentsline {subsubsection}{\numberline {6.12.2.101}ISRAELI}{66}{subsubsection.6.12.2.101}%
+\contentsline {subsubsection}{\numberline {6.12.2.102}ITALIAN}{66}{subsubsection.6.12.2.102}%
+\contentsline {subsubsection}{\numberline {6.12.2.103}IVORIAN}{66}{subsubsection.6.12.2.103}%
+\contentsline {subsubsection}{\numberline {6.12.2.104}JAMAICAN}{66}{subsubsection.6.12.2.104}%
+\contentsline {subsubsection}{\numberline {6.12.2.105}JAPANESE}{66}{subsubsection.6.12.2.105}%
+\contentsline {subsubsection}{\numberline {6.12.2.106}JORDANIAN}{66}{subsubsection.6.12.2.106}%
+\contentsline {subsubsection}{\numberline {6.12.2.107}KAZAKH}{66}{subsubsection.6.12.2.107}%
+\contentsline {subsubsection}{\numberline {6.12.2.108}KENYAN}{67}{subsubsection.6.12.2.108}%
+\contentsline {subsubsection}{\numberline {6.12.2.109}KITTITIAN}{67}{subsubsection.6.12.2.109}%
+\contentsline {subsubsection}{\numberline {6.12.2.110}KOSOVAN}{67}{subsubsection.6.12.2.110}%
+\contentsline {subsubsection}{\numberline {6.12.2.111}KUWAITI}{67}{subsubsection.6.12.2.111}%
+\contentsline {subsubsection}{\numberline {6.12.2.112}KYRGYZ}{67}{subsubsection.6.12.2.112}%
+\contentsline {subsubsection}{\numberline {6.12.2.113}LAO}{67}{subsubsection.6.12.2.113}%
+\contentsline {subsubsection}{\numberline {6.12.2.114}LATVIAN}{67}{subsubsection.6.12.2.114}%
+\contentsline {subsubsection}{\numberline {6.12.2.115}LEBANESE}{67}{subsubsection.6.12.2.115}%
+\contentsline {subsubsection}{\numberline {6.12.2.116}LIBERIAN}{68}{subsubsection.6.12.2.116}%
+\contentsline {subsubsection}{\numberline {6.12.2.117}LIBYAN}{68}{subsubsection.6.12.2.117}%
+\contentsline {subsubsection}{\numberline {6.12.2.118}LIECHTENSTEIN\_CITIZEN}{68}{subsubsection.6.12.2.118}%
+\contentsline {subsubsection}{\numberline {6.12.2.119}LITHUANIAN}{68}{subsubsection.6.12.2.119}%
+\contentsline {subsubsection}{\numberline {6.12.2.120}LUXEMBOURGER}{68}{subsubsection.6.12.2.120}%
+\contentsline {subsubsection}{\numberline {6.12.2.121}MACANESE}{68}{subsubsection.6.12.2.121}%
+\contentsline {subsubsection}{\numberline {6.12.2.122}MACEDONIAN}{68}{subsubsection.6.12.2.122}%
+\contentsline {subsubsection}{\numberline {6.12.2.123}MALAGASY}{68}{subsubsection.6.12.2.123}%
+\contentsline {subsubsection}{\numberline {6.12.2.124}MALAWIAN}{69}{subsubsection.6.12.2.124}%
+\contentsline {subsubsection}{\numberline {6.12.2.125}MALAYSIAN}{69}{subsubsection.6.12.2.125}%
+\contentsline {subsubsection}{\numberline {6.12.2.126}MALDIVIAN}{69}{subsubsection.6.12.2.126}%
+\contentsline {subsubsection}{\numberline {6.12.2.127}MALIAN}{69}{subsubsection.6.12.2.127}%
+\contentsline {subsubsection}{\numberline {6.12.2.128}MALTESE}{69}{subsubsection.6.12.2.128}%
+\contentsline {subsubsection}{\numberline {6.12.2.129}MARSHALLESE}{69}{subsubsection.6.12.2.129}%
+\contentsline {subsubsection}{\numberline {6.12.2.130}MARTINIQUAIS}{69}{subsubsection.6.12.2.130}%
+\contentsline {subsubsection}{\numberline {6.12.2.131}MAURITANIAN}{69}{subsubsection.6.12.2.131}%
+\contentsline {subsubsection}{\numberline {6.12.2.132}MAURITIAN}{70}{subsubsection.6.12.2.132}%
+\contentsline {subsubsection}{\numberline {6.12.2.133}MEXICAN}{70}{subsubsection.6.12.2.133}%
+\contentsline {subsubsection}{\numberline {6.12.2.134}MICRONESIAN}{70}{subsubsection.6.12.2.134}%
+\contentsline {subsubsection}{\numberline {6.12.2.135}MOLDOVAN}{70}{subsubsection.6.12.2.135}%
+\contentsline {subsubsection}{\numberline {6.12.2.136}MONEGASQUE}{70}{subsubsection.6.12.2.136}%
+\contentsline {subsubsection}{\numberline {6.12.2.137}MONGOLIAN}{70}{subsubsection.6.12.2.137}%
+\contentsline {subsubsection}{\numberline {6.12.2.138}MONTENEGRIN}{70}{subsubsection.6.12.2.138}%
+\contentsline {subsubsection}{\numberline {6.12.2.139}MONTSERRATIAN}{70}{subsubsection.6.12.2.139}%
+\contentsline {subsubsection}{\numberline {6.12.2.140}MOROCCAN}{71}{subsubsection.6.12.2.140}%
+\contentsline {subsubsection}{\numberline {6.12.2.141}MOSOTHO}{71}{subsubsection.6.12.2.141}%
+\contentsline {subsubsection}{\numberline {6.12.2.142}MOZAMBICAN}{71}{subsubsection.6.12.2.142}%
+\contentsline {subsubsection}{\numberline {6.12.2.143}NAMIBIAN}{71}{subsubsection.6.12.2.143}%
+\contentsline {subsubsection}{\numberline {6.12.2.144}NAURUAN}{71}{subsubsection.6.12.2.144}%
+\contentsline {subsubsection}{\numberline {6.12.2.145}NEPALESE}{71}{subsubsection.6.12.2.145}%
+\contentsline {subsubsection}{\numberline {6.12.2.146}NEW\_ZEALANDER}{71}{subsubsection.6.12.2.146}%
+\contentsline {subsubsection}{\numberline {6.12.2.147}NICARAGUAN}{71}{subsubsection.6.12.2.147}%
+\contentsline {subsubsection}{\numberline {6.12.2.148}NIGERIAN}{72}{subsubsection.6.12.2.148}%
+\contentsline {subsubsection}{\numberline {6.12.2.149}NIGERIEN}{72}{subsubsection.6.12.2.149}%
+\contentsline {subsubsection}{\numberline {6.12.2.150}NIUEAN}{72}{subsubsection.6.12.2.150}%
+\contentsline {subsubsection}{\numberline {6.12.2.151}NORTH\_KOREAN}{72}{subsubsection.6.12.2.151}%
+\contentsline {subsubsection}{\numberline {6.12.2.152}NORTHERN\_IRISH}{72}{subsubsection.6.12.2.152}%
+\contentsline {subsubsection}{\numberline {6.12.2.153}NORWEGIAN}{72}{subsubsection.6.12.2.153}%
+\contentsline {subsubsection}{\numberline {6.12.2.154}OMANI}{72}{subsubsection.6.12.2.154}%
+\contentsline {subsubsection}{\numberline {6.12.2.155}PAKISTANI}{72}{subsubsection.6.12.2.155}%
+\contentsline {subsubsection}{\numberline {6.12.2.156}PALAUAN}{73}{subsubsection.6.12.2.156}%
+\contentsline {subsubsection}{\numberline {6.12.2.157}PALESTINIAN}{73}{subsubsection.6.12.2.157}%
+\contentsline {subsubsection}{\numberline {6.12.2.158}PANAMANIAN}{73}{subsubsection.6.12.2.158}%
+\contentsline {subsubsection}{\numberline {6.12.2.159}PAPUA\_NEW\_GUINEAN}{73}{subsubsection.6.12.2.159}%
+\contentsline {subsubsection}{\numberline {6.12.2.160}PARAGUAYAN}{73}{subsubsection.6.12.2.160}%
+\contentsline {subsubsection}{\numberline {6.12.2.161}PERUVIAN}{73}{subsubsection.6.12.2.161}%
+\contentsline {subsubsection}{\numberline {6.12.2.162}PITCAIRN\_ISLANDER}{73}{subsubsection.6.12.2.162}%
+\contentsline {subsubsection}{\numberline {6.12.2.163}POLISH}{73}{subsubsection.6.12.2.163}%
+\contentsline {subsubsection}{\numberline {6.12.2.164}PORTUGUESE}{74}{subsubsection.6.12.2.164}%
+\contentsline {subsubsection}{\numberline {6.12.2.165}PRYDEINIG}{74}{subsubsection.6.12.2.165}%
+\contentsline {subsubsection}{\numberline {6.12.2.166}PUERTO\_RICAN}{74}{subsubsection.6.12.2.166}%
+\contentsline {subsubsection}{\numberline {6.12.2.167}QATARI}{74}{subsubsection.6.12.2.167}%
+\contentsline {subsubsection}{\numberline {6.12.2.168}ROMANIAN}{74}{subsubsection.6.12.2.168}%
+\contentsline {subsubsection}{\numberline {6.12.2.169}RUSSIAN}{74}{subsubsection.6.12.2.169}%
+\contentsline {subsubsection}{\numberline {6.12.2.170}RWANDAN}{74}{subsubsection.6.12.2.170}%
+\contentsline {subsubsection}{\numberline {6.12.2.171}SALVADOREAN}{74}{subsubsection.6.12.2.171}%
+\contentsline {subsubsection}{\numberline {6.12.2.172}SAMMARINESE}{75}{subsubsection.6.12.2.172}%
+\contentsline {subsubsection}{\numberline {6.12.2.173}SAMOAN}{75}{subsubsection.6.12.2.173}%
+\contentsline {subsubsection}{\numberline {6.12.2.174}SAO\_TOMEAN}{75}{subsubsection.6.12.2.174}%
+\contentsline {subsubsection}{\numberline {6.12.2.175}SAUDI\_ARABIAN}{75}{subsubsection.6.12.2.175}%
+\contentsline {subsubsection}{\numberline {6.12.2.176}SCOTTISH}{75}{subsubsection.6.12.2.176}%
+\contentsline {subsubsection}{\numberline {6.12.2.177}SENEGALESE}{75}{subsubsection.6.12.2.177}%
+\contentsline {subsubsection}{\numberline {6.12.2.178}SERBIAN}{75}{subsubsection.6.12.2.178}%
+\contentsline {subsubsection}{\numberline {6.12.2.179}SIERRA\_LEONEAN}{75}{subsubsection.6.12.2.179}%
+\contentsline {subsubsection}{\numberline {6.12.2.180}SINGAPOREAN}{76}{subsubsection.6.12.2.180}%
+\contentsline {subsubsection}{\numberline {6.12.2.181}SLOVAK}{76}{subsubsection.6.12.2.181}%
+\contentsline {subsubsection}{\numberline {6.12.2.182}SLOVENIAN}{76}{subsubsection.6.12.2.182}%
+\contentsline {subsubsection}{\numberline {6.12.2.183}SOLOMON\_ISLANDER}{76}{subsubsection.6.12.2.183}%
+\contentsline {subsubsection}{\numberline {6.12.2.184}SOMALI}{76}{subsubsection.6.12.2.184}%
+\contentsline {subsubsection}{\numberline {6.12.2.185}SOUTH\_AFRICAN}{76}{subsubsection.6.12.2.185}%
+\contentsline {subsubsection}{\numberline {6.12.2.186}SOUTH\_KOREAN}{76}{subsubsection.6.12.2.186}%
+\contentsline {subsubsection}{\numberline {6.12.2.187}SOUTH\_SUDANESE}{76}{subsubsection.6.12.2.187}%
+\contentsline {subsubsection}{\numberline {6.12.2.188}SPANISH}{77}{subsubsection.6.12.2.188}%
+\contentsline {subsubsection}{\numberline {6.12.2.189}SRI\_LANKAN}{77}{subsubsection.6.12.2.189}%
+\contentsline {subsubsection}{\numberline {6.12.2.190}ST\_HELENIAN}{77}{subsubsection.6.12.2.190}%
+\contentsline {subsubsection}{\numberline {6.12.2.191}ST\_LUCIAN}{77}{subsubsection.6.12.2.191}%
+\contentsline {subsubsection}{\numberline {6.12.2.192}STATELESS}{77}{subsubsection.6.12.2.192}%
+\contentsline {subsubsection}{\numberline {6.12.2.193}SUDANESE}{77}{subsubsection.6.12.2.193}%
+\contentsline {subsubsection}{\numberline {6.12.2.194}SURINAMESE}{77}{subsubsection.6.12.2.194}%
+\contentsline {subsubsection}{\numberline {6.12.2.195}SWAZI}{77}{subsubsection.6.12.2.195}%
+\contentsline {subsubsection}{\numberline {6.12.2.196}SWEDISH}{78}{subsubsection.6.12.2.196}%
+\contentsline {subsubsection}{\numberline {6.12.2.197}SWISS}{78}{subsubsection.6.12.2.197}%
+\contentsline {subsubsection}{\numberline {6.12.2.198}SYRIAN}{78}{subsubsection.6.12.2.198}%
+\contentsline {subsubsection}{\numberline {6.12.2.199}TAIWANESE}{78}{subsubsection.6.12.2.199}%
+\contentsline {subsubsection}{\numberline {6.12.2.200}TAJIK}{78}{subsubsection.6.12.2.200}%
+\contentsline {subsubsection}{\numberline {6.12.2.201}TANZANIAN}{78}{subsubsection.6.12.2.201}%
+\contentsline {subsubsection}{\numberline {6.12.2.202}THAI}{78}{subsubsection.6.12.2.202}%
+\contentsline {subsubsection}{\numberline {6.12.2.203}TOGOLESE}{78}{subsubsection.6.12.2.203}%
+\contentsline {subsubsection}{\numberline {6.12.2.204}TONGAN}{79}{subsubsection.6.12.2.204}%
+\contentsline {subsubsection}{\numberline {6.12.2.205}TRINIDADIAN}{79}{subsubsection.6.12.2.205}%
+\contentsline {subsubsection}{\numberline {6.12.2.206}TRISTANIAN}{79}{subsubsection.6.12.2.206}%
+\contentsline {subsubsection}{\numberline {6.12.2.207}TUNISIAN}{79}{subsubsection.6.12.2.207}%
+\contentsline {subsubsection}{\numberline {6.12.2.208}TURKISH}{79}{subsubsection.6.12.2.208}%
+\contentsline {subsubsection}{\numberline {6.12.2.209}TURKMEN}{79}{subsubsection.6.12.2.209}%
+\contentsline {subsubsection}{\numberline {6.12.2.210}TURKS\_AND\_CAICOS\_ISLANDER}{79}{subsubsection.6.12.2.210}%
+\contentsline {subsubsection}{\numberline {6.12.2.211}TUVALUAN}{79}{subsubsection.6.12.2.211}%
+\contentsline {subsubsection}{\numberline {6.12.2.212}UGANDAN}{80}{subsubsection.6.12.2.212}%
+\contentsline {subsubsection}{\numberline {6.12.2.213}UKRAINIAN}{80}{subsubsection.6.12.2.213}%
+\contentsline {subsubsection}{\numberline {6.12.2.214}URUGUAYAN}{80}{subsubsection.6.12.2.214}%
+\contentsline {subsubsection}{\numberline {6.12.2.215}UZBEK}{80}{subsubsection.6.12.2.215}%
+\contentsline {subsubsection}{\numberline {6.12.2.216}VATICAN\_CITIZEN}{80}{subsubsection.6.12.2.216}%
+\contentsline {subsubsection}{\numberline {6.12.2.217}VENEZUELAN}{80}{subsubsection.6.12.2.217}%
+\contentsline {subsubsection}{\numberline {6.12.2.218}VIETNAMESE}{80}{subsubsection.6.12.2.218}%
+\contentsline {subsubsection}{\numberline {6.12.2.219}VINCENTIAN}{80}{subsubsection.6.12.2.219}%
+\contentsline {subsubsection}{\numberline {6.12.2.220}WALLISIAN}{81}{subsubsection.6.12.2.220}%
+\contentsline {subsubsection}{\numberline {6.12.2.221}WELSH}{81}{subsubsection.6.12.2.221}%
+\contentsline {subsubsection}{\numberline {6.12.2.222}YEMENI}{81}{subsubsection.6.12.2.222}%
+\contentsline {subsubsection}{\numberline {6.12.2.223}ZAMBIAN}{81}{subsubsection.6.12.2.223}%
+\contentsline {subsubsection}{\numberline {6.12.2.224}ZIMBABWEAN}{81}{subsubsection.6.12.2.224}%
+\contentsline {section}{\numberline {6.13}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Phone\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Number Class Reference}{81}{section.6.13}%
+\contentsline {subsection}{\numberline {6.13.1}Member Function Documentation}{82}{subsection.6.13.1}%
+\contentsline {subsubsection}{\numberline {6.13.1.1}generate()}{82}{subsubsection.6.13.1.1}%
+\contentsline {subsubsection}{\numberline {6.13.1.2}generateMany()}{82}{subsubsection.6.13.1.2}%
+\contentsline {subsubsection}{\numberline {6.13.1.3}getPhoneNumber()}{83}{subsubsection.6.13.1.3}%
+\contentsline {subsubsection}{\numberline {6.13.1.4}getType()}{83}{subsubsection.6.13.1.4}%
+\contentsline {subsubsection}{\numberline {6.13.1.5}setPhoneNumber()}{83}{subsubsection.6.13.1.5}%
+\contentsline {subsubsection}{\numberline {6.13.1.6}setType()}{84}{subsubsection.6.13.1.6}%
+\contentsline {subsubsection}{\numberline {6.13.1.7}toString()}{84}{subsubsection.6.13.1.7}%
+\contentsline {section}{\numberline {6.14}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Relation Enum Reference}{84}{section.6.14}%
+\contentsline {subsection}{\numberline {6.14.1}Member Function Documentation}{84}{subsection.6.14.1}%
+\contentsline {subsubsection}{\numberline {6.14.1.1}generate()}{84}{subsubsection.6.14.1.1}%
+\contentsline {subsection}{\numberline {6.14.2}Member Data Documentation}{85}{subsection.6.14.2}%
+\contentsline {subsubsection}{\numberline {6.14.2.1}CHILDREN}{85}{subsubsection.6.14.2.1}%
+\contentsline {subsubsection}{\numberline {6.14.2.2}COUSIN}{85}{subsubsection.6.14.2.2}%
+\contentsline {subsubsection}{\numberline {6.14.2.3}GRANDPARENT}{85}{subsubsection.6.14.2.3}%
+\contentsline {subsubsection}{\numberline {6.14.2.4}PARENT}{85}{subsubsection.6.14.2.4}%
+\contentsline {subsubsection}{\numberline {6.14.2.5}SIBLING}{85}{subsubsection.6.14.2.5}%
+\contentsline {section}{\numberline {6.15}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}serialise.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Serialiser$<$ I $>$ Interface Template Reference}{86}{section.6.15}%
+\contentsline {subsection}{\numberline {6.15.1}Detailed Description}{86}{subsection.6.15.1}%
+\contentsline {subsection}{\numberline {6.15.2}Member Function Documentation}{86}{subsection.6.15.2}%
+\contentsline {subsubsection}{\numberline {6.15.2.1}deserialise()}{86}{subsubsection.6.15.2.1}%
+\contentsline {subsubsection}{\numberline {6.15.2.2}getClassName()}{87}{subsubsection.6.15.2.2}%
+\contentsline {subsubsection}{\numberline {6.15.2.3}serialise()}{87}{subsubsection.6.15.2.3}%
+\contentsline {subsubsection}{\numberline {6.15.2.4}setClassName()}{87}{subsubsection.6.15.2.4}%
+\contentsline {section}{\numberline {6.16}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sex Enum Reference}{88}{section.6.16}%
+\contentsline {subsection}{\numberline {6.16.1}Member Function Documentation}{88}{subsection.6.16.1}%
+\contentsline {subsubsection}{\numberline {6.16.1.1}generate()}{88}{subsubsection.6.16.1.1}%
+\contentsline {subsection}{\numberline {6.16.2}Member Data Documentation}{88}{subsection.6.16.2}%
+\contentsline {subsubsection}{\numberline {6.16.2.1}FEMALE}{88}{subsubsection.6.16.2.1}%
+\contentsline {subsubsection}{\numberline {6.16.2.2}MALE}{88}{subsubsection.6.16.2.2}%
+\contentsline {subsubsection}{\numberline {6.16.2.3}NOT\_KNOWN}{89}{subsubsection.6.16.2.3}%
+\contentsline {subsubsection}{\numberline {6.16.2.4}NOT\_SPECIFIED}{89}{subsubsection.6.16.2.4}%
+\contentsline {section}{\numberline {6.17}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Subject Enum Reference}{89}{section.6.17}%
+\contentsline {subsection}{\numberline {6.17.1}Member Function Documentation}{89}{subsection.6.17.1}%
+\contentsline {subsubsection}{\numberline {6.17.1.1}generate()}{89}{subsubsection.6.17.1.1}%
+\contentsline {subsection}{\numberline {6.17.2}Member Data Documentation}{90}{subsection.6.17.2}%
+\contentsline {subsubsection}{\numberline {6.17.2.1}ARQUITECTURAS\_AVANZADAS\_Y\_DE\_PROPOSITO\_ESPECIFICO}{90}{subsubsection.6.17.2.1}%
+\contentsline {subsubsection}{\numberline {6.17.2.2}COMPLEJIDAD\_COMPUTACIONAL}{90}{subsubsection.6.17.2.2}%
+\contentsline {subsubsection}{\numberline {6.17.2.3}DESARROLLO\_Y\_MANTENIMENTO\_DE\_SISTEMAS\_DE\_INFORMACION}{90}{subsubsection.6.17.2.3}%
+\contentsline {subsubsection}{\numberline {6.17.2.4}GESTION\_DE\_LA\_INNOVACION}{90}{subsubsection.6.17.2.4}%
+\contentsline {subsubsection}{\numberline {6.17.2.5}GESTION\_DEL\_CONOCIMIENTO\_EN\_LAS\_ORGANIZACIONES}{90}{subsubsection.6.17.2.5}%
+\contentsline {subsubsection}{\numberline {6.17.2.6}INGENIERIA\_LOGISTICA}{91}{subsubsection.6.17.2.6}%
+\contentsline {subsubsection}{\numberline {6.17.2.7}INTERFACES\_INTELIGENTES}{91}{subsubsection.6.17.2.7}%
+\contentsline {subsubsection}{\numberline {6.17.2.8}LABORATORIO\_DE\_DESARROLLO\_Y\_HERRAMIENTAS}{91}{subsubsection.6.17.2.8}%
+\contentsline {subsubsection}{\numberline {6.17.2.9}NORMATIVA\_Y\_REGULACION}{91}{subsubsection.6.17.2.9}%
+\contentsline {subsubsection}{\numberline {6.17.2.10}ROBOTICA\_COMPUTACIONAL}{91}{subsubsection.6.17.2.10}%
+\contentsline {subsubsection}{\numberline {6.17.2.11}SEGURIDAD\_DE\_SISTEMAS\_INFORMATICOS}{91}{subsubsection.6.17.2.11}%
+\contentsline {subsubsection}{\numberline {6.17.2.12}SISTEMAS\_DE\_INFORMACION\_CONTABLE}{91}{subsubsection.6.17.2.12}%
+\contentsline {subsubsection}{\numberline {6.17.2.13}SISTEMAS\_EMPOTRADOS}{91}{subsubsection.6.17.2.13}%
+\contentsline {subsubsection}{\numberline {6.17.2.14}SISTEMAS\_INTELIGENTES}{92}{subsubsection.6.17.2.14}%
+\contentsline {subsubsection}{\numberline {6.17.2.15}SISTEMAS\_Y\_TECNOLOGIAS\_WEB}{92}{subsubsection.6.17.2.15}%
+\contentsline {subsubsection}{\numberline {6.17.2.16}TECNOLOGIAS\_DE\_LA\_INFORMACION\_PARA\_LAS\_ORGANIZACIONES}{92}{subsubsection.6.17.2.16}%
+\contentsline {subsubsection}{\numberline {6.17.2.17}VISION\_POR\_COMPUTADOR}{92}{subsubsection.6.17.2.17}%
+\contentsline {section}{\numberline {6.18}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Teacher Class Reference}{92}{section.6.18}%
+\contentsline {subsection}{\numberline {6.18.1}Detailed Description}{94}{subsection.6.18.1}%
+\contentsline {subsection}{\numberline {6.18.2}Member Function Documentation}{94}{subsection.6.18.2}%
+\contentsline {subsubsection}{\numberline {6.18.2.1}generate()}{94}{subsubsection.6.18.2.1}%
+\contentsline {subsubsection}{\numberline {6.18.2.2}generateUID()}{95}{subsubsection.6.18.2.2}%
+\contentsline {subsubsection}{\numberline {6.18.2.3}getAddress()}{95}{subsubsection.6.18.2.3}%
+\contentsline {subsubsection}{\numberline {6.18.2.4}getContactNumbers()}{95}{subsubsection.6.18.2.4}%
+\contentsline {subsubsection}{\numberline {6.18.2.5}getDateOfBirth()}{95}{subsubsection.6.18.2.5}%
+\contentsline {subsubsection}{\numberline {6.18.2.6}getDepartment()}{96}{subsubsection.6.18.2.6}%
+\contentsline {subsubsection}{\numberline {6.18.2.7}getEmergencyContacts()}{96}{subsubsection.6.18.2.7}%
+\contentsline {subsubsection}{\numberline {6.18.2.8}getHireDate()}{96}{subsubsection.6.18.2.8}%
+\contentsline {subsubsection}{\numberline {6.18.2.9}getManager()}{96}{subsubsection.6.18.2.9}%
+\contentsline {subsubsection}{\numberline {6.18.2.10}getName()}{97}{subsubsection.6.18.2.10}%
+\contentsline {subsubsection}{\numberline {6.18.2.11}getNationality()}{97}{subsubsection.6.18.2.11}%
+\contentsline {subsubsection}{\numberline {6.18.2.12}getSalaryAmount()}{97}{subsubsection.6.18.2.12}%
+\contentsline {subsubsection}{\numberline {6.18.2.13}getSalaryBonus()}{97}{subsubsection.6.18.2.13}%
+\contentsline {subsubsection}{\numberline {6.18.2.14}getSex()}{98}{subsubsection.6.18.2.14}%
+\contentsline {subsubsection}{\numberline {6.18.2.15}getSubject()}{98}{subsubsection.6.18.2.15}%
+\contentsline {subsubsection}{\numberline {6.18.2.16}getUid()}{98}{subsubsection.6.18.2.16}%
+\contentsline {subsubsection}{\numberline {6.18.2.17}getWorkLocation()}{98}{subsubsection.6.18.2.17}%
+\contentsline {subsubsection}{\numberline {6.18.2.18}setAddress()}{98}{subsubsection.6.18.2.18}%
+\contentsline {subsubsection}{\numberline {6.18.2.19}setContactNumbers()}{99}{subsubsection.6.18.2.19}%
+\contentsline {subsubsection}{\numberline {6.18.2.20}setDateOfBirth()}{99}{subsubsection.6.18.2.20}%
+\contentsline {subsubsection}{\numberline {6.18.2.21}setDepartment()}{99}{subsubsection.6.18.2.21}%
+\contentsline {subsubsection}{\numberline {6.18.2.22}setEmergencyContacts()}{100}{subsubsection.6.18.2.22}%
+\contentsline {subsubsection}{\numberline {6.18.2.23}setHireDate()}{100}{subsubsection.6.18.2.23}%
+\contentsline {subsubsection}{\numberline {6.18.2.24}setManager()}{100}{subsubsection.6.18.2.24}%
+\contentsline {subsubsection}{\numberline {6.18.2.25}setName()}{100}{subsubsection.6.18.2.25}%
+\contentsline {subsubsection}{\numberline {6.18.2.26}setNationality()}{101}{subsubsection.6.18.2.26}%
+\contentsline {subsubsection}{\numberline {6.18.2.27}setSalaryAmount()}{101}{subsubsection.6.18.2.27}%
+\contentsline {subsubsection}{\numberline {6.18.2.28}setSalaryBonus()}{101}{subsubsection.6.18.2.28}%
+\contentsline {subsubsection}{\numberline {6.18.2.29}setSex()}{102}{subsubsection.6.18.2.29}%
+\contentsline {subsubsection}{\numberline {6.18.2.30}setSubject()}{102}{subsubsection.6.18.2.30}%
+\contentsline {subsubsection}{\numberline {6.18.2.31}setUid()}{102}{subsubsection.6.18.2.31}%
+\contentsline {subsubsection}{\numberline {6.18.2.32}setWorkLocation()}{102}{subsubsection.6.18.2.32}%
+\contentsline {subsubsection}{\numberline {6.18.2.33}toString()}{103}{subsubsection.6.18.2.33}%
+\contentsline {section}{\numberline {6.19}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Thread\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Local\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Faker Class Reference}{103}{section.6.19}%
+\contentsline {subsection}{\numberline {6.19.1}Member Function Documentation}{103}{subsection.6.19.1}%
+\contentsline {subsubsection}{\numberline {6.19.1.1}getFaker()}{103}{subsubsection.6.19.1.1}%
+\contentsline {subsubsection}{\numberline {6.19.1.2}unloadFaker()}{104}{subsubsection.6.19.1.2}%
+\contentsline {subsubsection}{\numberline {6.19.1.3}unloadRandom()}{104}{subsubsection.6.19.1.3}%
+\contentsline {section}{\numberline {6.20}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Id Class Reference}{104}{section.6.20}%
+\contentsline {subsection}{\numberline {6.20.1}Detailed Description}{105}{subsection.6.20.1}%
+\contentsline {subsection}{\numberline {6.20.2}Constructor \& Destructor Documentation}{105}{subsection.6.20.2}%
+\contentsline {subsubsection}{\numberline {6.20.2.1}UserId()}{105}{subsubsection.6.20.2.1}%
+\contentsline {subsection}{\numberline {6.20.3}Member Function Documentation}{105}{subsection.6.20.3}%
+\contentsline {subsubsection}{\numberline {6.20.3.1}equals()}{105}{subsubsection.6.20.3.1}%
+\contentsline {subsubsection}{\numberline {6.20.3.2}getId()}{105}{subsubsection.6.20.3.2}%
+\contentsline {subsubsection}{\numberline {6.20.3.3}hashCode()}{105}{subsubsection.6.20.3.3}%
+\contentsline {subsubsection}{\numberline {6.20.3.4}id()}{105}{subsubsection.6.20.3.4}%
+\contentsline {subsubsection}{\numberline {6.20.3.5}setId()}{106}{subsubsection.6.20.3.5}%
+\contentsline {subsubsection}{\numberline {6.20.3.6}toString()}{106}{subsubsection.6.20.3.6}%
+\contentsline {section}{\numberline {6.21}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Work\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Location Class Reference}{106}{section.6.21}%
+\contentsline {subsection}{\numberline {6.21.1}Member Function Documentation}{107}{subsection.6.21.1}%
+\contentsline {subsubsection}{\numberline {6.21.1.1}generate()}{107}{subsubsection.6.21.1.1}%
+\contentsline {subsubsection}{\numberline {6.21.1.2}getAddress()}{107}{subsubsection.6.21.1.2}%
+\contentsline {subsubsection}{\numberline {6.21.1.3}getWorkLocationName()}{108}{subsubsection.6.21.1.3}%
+\contentsline {subsubsection}{\numberline {6.21.1.4}setAddress()}{108}{subsubsection.6.21.1.4}%
+\contentsline {subsubsection}{\numberline {6.21.1.5}setWorkLocationName()}{108}{subsubsection.6.21.1.5}%
+\contentsline {subsubsection}{\numberline {6.21.1.6}toString()}{108}{subsubsection.6.21.1.6}%
+\contentsline {section}{\numberline {6.22}uk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gov.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gchq.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntheticdatagenerator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Work\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Location\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Name Enum Reference}{109}{section.6.22}%
+\contentsline {subsection}{\numberline {6.22.1}Member Function Documentation}{109}{subsection.6.22.1}%
+\contentsline {subsubsection}{\numberline {6.22.1.1}generate()}{110}{subsubsection.6.22.1.1}%
+\contentsline {subsection}{\numberline {6.22.2}Member Data Documentation}{110}{subsection.6.22.2}%
+\contentsline {subsubsection}{\numberline {6.22.2.1}ADEJE}{110}{subsubsection.6.22.2.1}%
+\contentsline {subsubsection}{\numberline {6.22.2.2}ALBACETE}{110}{subsubsection.6.22.2.2}%
+\contentsline {subsubsection}{\numberline {6.22.2.3}ALICANTE}{110}{subsubsection.6.22.2.3}%
+\contentsline {subsubsection}{\numberline {6.22.2.4}ALMERIA}{110}{subsubsection.6.22.2.4}%
+\contentsline {subsubsection}{\numberline {6.22.2.5}ARRECIFE}{110}{subsubsection.6.22.2.5}%
+\contentsline {subsubsection}{\numberline {6.22.2.6}BARCELONA}{111}{subsubsection.6.22.2.6}%
+\contentsline {subsubsection}{\numberline {6.22.2.7}BILBAO}{111}{subsubsection.6.22.2.7}%
+\contentsline {subsubsection}{\numberline {6.22.2.8}BURGOS}{111}{subsubsection.6.22.2.8}%
+\contentsline {subsubsection}{\numberline {6.22.2.9}CADIZ}{111}{subsubsection.6.22.2.9}%
+\contentsline {subsubsection}{\numberline {6.22.2.10}CORDOBA}{111}{subsubsection.6.22.2.10}%
+\contentsline {subsubsection}{\numberline {6.22.2.11}GETAFE}{111}{subsubsection.6.22.2.11}%
+\contentsline {subsubsection}{\numberline {6.22.2.12}GIJON}{111}{subsubsection.6.22.2.12}%
+\contentsline {subsubsection}{\numberline {6.22.2.13}GRANADA}{111}{subsubsection.6.22.2.13}%
+\contentsline {subsubsection}{\numberline {6.22.2.14}HUELVA}{112}{subsubsection.6.22.2.14}%
+\contentsline {subsubsection}{\numberline {6.22.2.15}JEREZ\_DE\_LA\_FRONTERA}{112}{subsubsection.6.22.2.15}%
+\contentsline {subsubsection}{\numberline {6.22.2.16}LAS\_PALMAS\_DE\_GRAN\_CANARIA}{112}{subsubsection.6.22.2.16}%
+\contentsline {subsubsection}{\numberline {6.22.2.17}MADRID}{112}{subsubsection.6.22.2.17}%
+\contentsline {subsubsection}{\numberline {6.22.2.18}MALAGA}{112}{subsubsection.6.22.2.18}%
+\contentsline {subsubsection}{\numberline {6.22.2.19}MARBELLA}{112}{subsubsection.6.22.2.19}%
+\contentsline {subsubsection}{\numberline {6.22.2.20}MURCIA}{112}{subsubsection.6.22.2.20}%
+\contentsline {subsubsection}{\numberline {6.22.2.21}PALMA\_DE\_MALLORCA}{112}{subsubsection.6.22.2.21}%
+\contentsline {subsubsection}{\numberline {6.22.2.22}PAMPLONA}{113}{subsubsection.6.22.2.22}%
+\contentsline {subsubsection}{\numberline {6.22.2.23}PUERTO\_DE\_LA\_CRUZ}{113}{subsubsection.6.22.2.23}%
+\contentsline {subsubsection}{\numberline {6.22.2.24}PUERTO\_DEL\_ROSARIO}{113}{subsubsection.6.22.2.24}%
+\contentsline {subsubsection}{\numberline {6.22.2.25}SALAMANCA}{113}{subsubsection.6.22.2.25}%
+\contentsline {subsubsection}{\numberline {6.22.2.26}SAN\_CRISTOBAL\_DE\_LA\_LAGUNA}{113}{subsubsection.6.22.2.26}%
+\contentsline {subsubsection}{\numberline {6.22.2.27}SAN\_SEBASTIAN}{113}{subsubsection.6.22.2.27}%
+\contentsline {subsubsection}{\numberline {6.22.2.28}SAN\_SEBASTIAN\_DE\_LA\_GOMERA}{113}{subsubsection.6.22.2.28}%
+\contentsline {subsubsection}{\numberline {6.22.2.29}SANTA\_CRUZ\_DE\_TENERIFE}{113}{subsubsection.6.22.2.29}%
+\contentsline {subsubsection}{\numberline {6.22.2.30}SANTANDER}{114}{subsubsection.6.22.2.30}%
+\contentsline {subsubsection}{\numberline {6.22.2.31}SEVILLA}{114}{subsubsection.6.22.2.31}%
+\contentsline {subsubsection}{\numberline {6.22.2.32}TARRAGONA}{114}{subsubsection.6.22.2.32}%
+\contentsline {subsubsection}{\numberline {6.22.2.33}TOLEDO}{114}{subsubsection.6.22.2.33}%
+\contentsline {subsubsection}{\numberline {6.22.2.34}VALENCIA}{114}{subsubsection.6.22.2.34}%
+\contentsline {subsubsection}{\numberline {6.22.2.35}VALLADOLID}{114}{subsubsection.6.22.2.35}%
+\contentsline {subsubsection}{\numberline {6.22.2.36}VIGO}{114}{subsubsection.6.22.2.36}%
+\contentsline {subsubsection}{\numberline {6.22.2.37}VITORIA}{114}{subsubsection.6.22.2.37}%
+\contentsline {subsubsection}{\numberline {6.22.2.38}ZARAGOZA}{114}{subsubsection.6.22.2.38}%
+\contentsline {chapter}{\numberline {7}File Documentation}{115}{chapter.7}%
+\contentsline {section}{\numberline {7.1}java/uk/gov/gchq/syntheticdatagenerator/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Create\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data.java File Reference}{115}{section.7.1}%
+\contentsline {section}{\numberline {7.2}java/uk/gov/gchq/syntheticdatagenerator/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Create\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File.java File Reference}{115}{section.7.2}%
+\contentsline {section}{\numberline {7.3}java/uk/gov/gchq/syntheticdatagenerator/package-\/info.java File Reference}{115}{section.7.3}%
+\contentsline {section}{\numberline {7.4}java/uk/gov/gchq/syntheticdatagenerator/serialise/package-\/info.java File Reference}{116}{section.7.4}%
+\contentsline {section}{\numberline {7.5}java/uk/gov/gchq/syntheticdatagenerator/types/package-\/info.java File Reference}{116}{section.7.5}%
+\contentsline {section}{\numberline {7.6}java/uk/gov/gchq/syntheticdatagenerator/utils/package-\/info.java File Reference}{116}{section.7.6}%
+\contentsline {section}{\numberline {7.7}java/uk/gov/gchq/syntheticdatagenerator/serialise/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Avro\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Serialiser.java File Reference}{116}{section.7.7}%
+\contentsline {section}{\numberline {7.8}java/uk/gov/gchq/syntheticdatagenerator/serialise/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Serialiser.java File Reference}{116}{section.7.8}%
+\contentsline {section}{\numberline {7.9}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Address.java File Reference}{117}{section.7.9}%
+\contentsline {section}{\numberline {7.10}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bank\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Details.java File Reference}{117}{section.7.10}%
+\contentsline {section}{\numberline {7.11}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Department.java File Reference}{117}{section.7.11}%
+\contentsline {section}{\numberline {7.12}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Emergency\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Contact.java File Reference}{117}{section.7.12}%
+\contentsline {section}{\numberline {7.13}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Employee.java File Reference}{118}{section.7.13}%
+\contentsline {section}{\numberline {7.14}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Grade.java File Reference}{118}{section.7.14}%
+\contentsline {section}{\numberline {7.15}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.java File Reference}{118}{section.7.15}%
+\contentsline {section}{\numberline {7.16}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Nationality.java File Reference}{119}{section.7.16}%
+\contentsline {section}{\numberline {7.17}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Phone\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Number.java File Reference}{119}{section.7.17}%
+\contentsline {section}{\numberline {7.18}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Relation.java File Reference}{119}{section.7.18}%
+\contentsline {section}{\numberline {7.19}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sex.java File Reference}{119}{section.7.19}%
+\contentsline {section}{\numberline {7.20}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Subject.java File Reference}{120}{section.7.20}%
+\contentsline {section}{\numberline {7.21}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Teacher.java File Reference}{120}{section.7.21}%
+\contentsline {section}{\numberline {7.22}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Thread\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Local\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Faker.java File Reference}{120}{section.7.22}%
+\contentsline {section}{\numberline {7.23}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Id.java File Reference}{120}{section.7.23}%
+\contentsline {section}{\numberline {7.24}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Work\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Location.java File Reference}{121}{section.7.24}%
+\contentsline {section}{\numberline {7.25}java/uk/gov/gchq/syntheticdatagenerator/types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Work\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Location\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Name.java File Reference}{121}{section.7.25}%
+\contentsline {section}{\numberline {7.26}java/uk/gov/gchq/syntheticdatagenerator/utils/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Date\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Helper.java File Reference}{121}{section.7.26}%
+\contentsline {chapter}{Index}{123}{section*.104}%
