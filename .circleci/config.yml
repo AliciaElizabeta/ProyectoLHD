@@ -1,5 +1,10 @@
 version: 2
+orbs:
+  maven: circleci/maven@1.0
 jobs:
+  maven_test:
+    jobs:
+      - maven/test
   build:
     docker:
       - image: circleci/openjdk:11.0-stretch-node-browsers-legacy
