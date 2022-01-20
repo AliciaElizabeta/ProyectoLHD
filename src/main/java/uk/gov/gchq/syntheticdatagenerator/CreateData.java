@@ -61,12 +61,10 @@ public final class CreateData {
             // Default values
             int numberOfThreads = numberOfFiles;
             // Optional additional arguments overriding default values
-            //int csvFileExecution;
             String job = null;
             if (args.length > MINIMUM_ARGS) {
                 numberOfThreads = Integer.parseInt(args[NUM_THREADS_ARG]);
                 //1 para ejecucion sin csv y 0 para ejecucion modo csv
-                //csvFileExecution = Integer.parseInt(args[IS_CSV_OUT]);
                 job = args[OCUPATION];
             }
             long startTime = System.currentTimeMillis();
