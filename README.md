@@ -113,34 +113,39 @@ where:
 - OUTPUT is the type of output we want to generate. If the value is set to 1 we will obtain a **csv** output file and if the value is set to 0 we will obtain an **avro** output file
 - TYPE is the type of records we want to generate. If we select the value "e" we will obtain **employee** records and if the value is set to "t" we will obtain teacher records
 
-For example to generate 1,000,000 employee records, spread over 15 files, running the program with 4 threads, generating a csv output file and writing the output to /data/employee :
+**Note**:
+
+It does not affect the correct execution of the command if the selected TYPE is written in capital letters or not. The system will automatically recognize what type of data to generate.
+
+### Employee records
+
+The following command has to be executed to generate 1,000,000 employee records, spread over 15 files, running the program with 4 threads, generating a *csv* output file and writing the output to /data/employee :
 
 ```bash
 .createHRData.sh data/employee 1000000 15 4 1 e 
 ```
+
 If the previous ejecution line is not working please execute the following: 
 
 ```bash
 FILE=target/synthetic-data-generator-*-jar-with-dependencies.jar
-```
-```bash
 java -cp $FILE uk.gov.gchq.syntheticdatagenerator.CreateData $@ data/teacher 1000000 15 4 1 e 
 ```
 
-For example to generate 1,000,000 teacher records, spread over 15 files, running the program with 4 threads, generating an avro output file and writing the output to /data/teacher:
+### Teacher records 
+
+The following command has to be executed to generate 1,000,000 teacher records, spread over 15 files, running the program with 4 threads, generating an *avro* output file and writing the output to /data/teacher:
 
 ```bash
-.createHRData.sh data/employee 1000000 15 4 0 t 
+.createHRData.sh data/teacher 1000000 15 4 0 t 
 ```
+
+As mentioned before, if the previous execution line is not working please excute the following:
+
 ```bash
 FILE=target/synthetic-data-generator-*-jar-with-dependencies.jar
-```
-```bash
 java -cp $FILE uk.gov.gchq.syntheticdatagenerator.CreateData $@ data/teacher 1000000 15 4 0 t 
 ```
-
-Note:
-It does not affect the correct execution of the command if the TYPE generated is written in capital letters or not. The system will automatically recognize what type of data to generate.
 
 ## Authors
 
