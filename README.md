@@ -118,6 +118,7 @@ For example to generate 1,000,000 employee records, spread over 15 files, runnin
 ```bash
 .createHRData.sh data/employee 1000000 15 4 1 e 
 ```
+If the previous ejecution line is not working please execute the following: 
 
 ```bash
 FILE=target/synthetic-data-generator-*-jar-with-dependencies.jar
@@ -126,7 +127,7 @@ FILE=target/synthetic-data-generator-*-jar-with-dependencies.jar
 java -cp $FILE uk.gov.gchq.syntheticdatagenerator.CreateData $@ data/teacher 1000000 15 4 1 e 
 ```
 
-For example to generate 1,000,000 teacher records, spread over 15 files, running the program with 4 threads, generating an avro output file and writing the output to /data/employee:
+For example to generate 1,000,000 teacher records, spread over 15 files, running the program with 4 threads, generating an avro output file and writing the output to /data/teacher:
 
 ```bash
 .createHRData.sh data/employee 1000000 15 4 0 t 
