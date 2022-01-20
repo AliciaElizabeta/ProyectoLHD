@@ -58,7 +58,7 @@ public final class CreateDataFile implements Callable<Boolean> {
      * @param outputFile output file
      * @param ocupation type of person that is going to be created: the selection will be among employees or teachers
      */
-    public CreateDataFile(final long numberOfPeople, final int seed, final File outputFile, final String ocupation) {
+    public CreateDataFile(final long numberOfPeople, final int seed, final File outputFile, final String ocupation ) {
         this.numberOfPeople = numberOfPeople;
         this.random = new SecureRandom(longToBytes(seed));
         this.outputFile = outputFile;
